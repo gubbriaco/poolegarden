@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { navItems } from '../constants/items';
 import logo from '../assets/logo.png';
+import { theme } from '../styles/theme';
 
 const companyName = import.meta.env.VITE_COMPANY_NAME;
 
@@ -16,7 +17,7 @@ const AppBarCustom = ({ onMenuClick }) => {
     <AppBar 
       component="nav" 
       sx={{
-        backgroundColor: "#10192b",
+        backgroundColor: theme.palette.background.default,
       }}>
       <Toolbar>
         <IconButton
@@ -49,7 +50,7 @@ const AppBarCustom = ({ onMenuClick }) => {
 
         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
           {navItems.map((item) => (
-            <Button key={item} sx={{ color: '#fff' }}>
+            <Button key={item} sx={{ color: theme.palette.text.primary }}>
               {item}
             </Button>
           ))}

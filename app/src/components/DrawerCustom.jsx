@@ -6,23 +6,29 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import Typography from '@mui/material/Typography';
 import { navItems } from '../constants/items';
+import { theme, borderColor } from '../styles/theme';
 
 const drawerWidth = 240;
 
 const DrawerCustom = ({ open, onClose, container }) => {
   const drawer = (
-    <Box onClick={onClose} sx={{ textAlign: 'center'}}>
+    <Box onClick={onClose} sx={{ textAlign: 'center' }}>
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center',}}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
+        {navItems.map((item, index) => (
+          <React.Fragment key={item}>
+            <ListItem disablePadding>
+              <ListItemButton sx={{ textAlign: 'center' }}>
+                <ListItemText primary={item.toUpperCase()} sx={{ color: theme.palette.text.primary }} />
+              </ListItemButton>
+            </ListItem>
+            {index < navItems.length - 1 && ( // to avoid divider after the last item
+              <Divider sx={{ borderColor: borderColor, mx: 2 }} />
+            )}
+          </React.Fragment>
         ))}
       </List>
+
     </Box>
   );
 
@@ -35,7 +41,11 @@ const DrawerCustom = ({ open, onClose, container }) => {
       ModalProps={{ keepMounted: true }}
       sx={{
         display: { xs: 'block', sm: 'none' },
-        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+        '& .MuiDrawer-paper': {
+          boxSizing: 'border-box',
+          width: drawerWidth,
+          backgroundColor: "#10192b",
+        },
       }}
     >
       {drawer}
