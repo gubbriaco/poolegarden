@@ -1,6 +1,69 @@
 {
   "communities": {
     "0": [
+      "src_components_ctabutton",
+      "src_components_ctabutton_sizes",
+      "src_components_ctabutton_variants",
+      "src_components_icon",
+      "src_components_icon_string",
+      "src_components_sectionheading",
+      "src_data_images",
+      "src_data_images_images",
+      "src_data_images_u",
+      "src_pages_index",
+      "src_sections_about",
+      "src_sections_contact",
+      "src_sections_gallery",
+      "src_sections_gallery_items",
+      "src_sections_hero",
+      "src_sections_serviceblock",
+      "src_sections_serviceblock_accentmap",
+      "src_sections_servicesoverview",
+      "src_sections_testimonials"
+    ],
+    "1": [
+      "astro",
+      "package",
+      "package_dependencies",
+      "package_dependencies_astro",
+      "package_dependencies_tailwindcss",
+      "package_dependencies_tailwindcss_vite",
+      "package_engines",
+      "package_engines_node",
+      "package_name",
+      "package_scripts",
+      "package_scripts_astro",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_preview",
+      "package_type",
+      "package_version",
+      "tailwindcss",
+      "tailwindcss_vite"
+    ],
+    "2": [
+      "public_js_main",
+      "public_js_main_close",
+      "public_js_main_enableanalytics",
+      "public_js_main_get",
+      "public_js_main_open",
+      "public_js_main_parse",
+      "public_js_main_run",
+      "public_js_main_set",
+      "public_js_main_setopen"
+    ],
+    "3": [
+      "src_components_languageswitcher",
+      "src_data_site",
+      "src_data_site_navlinks",
+      "src_data_site_serviceid",
+      "src_data_site_servicelinks",
+      "src_data_site_services",
+      "src_data_site_site",
+      "src_sections_header",
+      "src_sections_newsletter"
+    ],
+    "4": [
       "ref",
       "ref_astro_tsconfigs_strict",
       "ref_astro_types_d_ts",
@@ -10,68 +73,90 @@
       "tsconfig_extends",
       "tsconfig_include"
     ],
-    "1": [
-      "astro",
-      "package_dependencies",
-      "package_dependencies_astro",
-      "package_dependencies_tailwindcss",
-      "package_dependencies_tailwindcss_vite",
-      "tailwindcss",
-      "tailwindcss_vite"
-    ],
-    "2": [
-      "package",
-      "package_engines",
-      "package_engines_node",
-      "package_name",
-      "package_type",
-      "package_version"
-    ],
-    "3": [
-      "package_scripts",
-      "package_scripts_astro",
-      "package_scripts_build",
-      "package_scripts_dev",
-      "package_scripts_preview"
-    ],
-    "4": [
-      "src_components_welcome",
-      "src_components_welcome_screen",
-      "src_layouts_layout",
-      "src_pages_index"
-    ],
     "5": [
+      "src_i18n_translations",
+      "src_i18n_translations_lang",
+      "src_i18n_translations_languages",
+      "src_i18n_translations_translations",
+      "src_pages_404",
+      "src_sections_cookieconsent"
+    ],
+    "6": [
+      "public_js_i18n",
+      "public_js_i18n_applylang",
+      "public_js_i18n_init",
+      "public_js_i18n_resolve"
+    ],
+    "7": [
+      "src_assets_logo",
+      "src_layouts_layout",
+      "src_layouts_layout_jsonld",
+      "src_layouts_layout_ogimageurl"
+    ],
+    "8": [
+      "src_layouts_legalpage",
+      "src_pages_cookie_policy",
+      "src_pages_privacy",
+      "src_pages_terms"
+    ],
+    "9": [
+      "src_sections_footer",
+      "src_sections_footer_legallinks",
+      "src_sections_footer_socials",
+      "src_sections_footer_tr"
+    ],
+    "10": [
       "agents_md",
       "claude_md",
       "graphify_concept"
     ],
-    "6": [
-      "astro_framework",
-      "readme_md"
+    "11": [
+      "prompt",
+      "readme"
     ],
-    "7": [
+    "12": [
       "astro_config"
     ],
-    "8": [
+    "13": [
       "public_favicon"
     ],
-    "9": [
-      "src_assets_astro_svg"
+    "14": [
+      "public_robots"
     ]
   },
   "cohesion": {
-    "0": 0.25,
-    "1": 0.2857142857142857,
-    "2": 0.3333333333333333,
-    "3": 0.4,
-    "4": 0.5,
-    "5": 0.6666666666666666,
-    "6": 1.0,
-    "7": 1.0,
-    "8": 1.0,
-    "9": 1.0
+    "0": 0.21637426900584794,
+    "1": 0.1111111111111111,
+    "2": 0.2777777777777778,
+    "3": 0.3055555555555556,
+    "4": 0.25,
+    "5": 0.4666666666666667,
+    "6": 0.8333333333333334,
+    "7": 0.5,
+    "8": 0.5,
+    "9": 0.5,
+    "10": 0.6666666666666666,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0
   },
   "gods": [
+    {
+      "id": "src_data_site_site",
+      "label": "site",
+      "degree": 7
+    },
+    {
+      "id": "src_data_images_images",
+      "label": "images",
+      "degree": 6
+    },
+    {
+      "id": "src_i18n_translations_translations",
+      "label": "translations",
+      "degree": 6
+    },
     {
       "id": "package_scripts",
       "label": "scripts",
@@ -83,6 +168,21 @@
       "degree": 3
     },
     {
+      "id": "public_js_i18n_applylang",
+      "label": "applyLang()",
+      "degree": 3
+    },
+    {
+      "id": "src_data_site_navlinks",
+      "label": "navLinks",
+      "degree": 3
+    },
+    {
+      "id": "src_assets_logo",
+      "label": "Pool & Garden Logo",
+      "degree": 3
+    },
+    {
       "id": "package_engines",
       "label": "engines",
       "degree": 2
@@ -91,41 +191,11 @@
       "id": "package_dependencies_tailwindcss_vite",
       "label": "@tailwindcss/vite",
       "degree": 2
-    },
-    {
-      "id": "package_dependencies_astro",
-      "label": "astro",
-      "degree": 2
-    },
-    {
-      "id": "package_dependencies_tailwindcss",
-      "label": "tailwindcss",
-      "degree": 2
-    },
-    {
-      "id": "tsconfig_exclude",
-      "label": "exclude",
-      "degree": 2
-    },
-    {
-      "id": "graphify_concept",
-      "label": "Graphify Knowledge Graph",
-      "degree": 2
-    },
-    {
-      "id": "package_engines_node",
-      "label": "node",
-      "degree": 1
-    },
-    {
-      "id": "package_scripts_dev",
-      "label": "dev",
-      "degree": 1
     }
   ],
   "surprises": [],
   "tokens": {
-    "input": 6935,
-    "output": 956
+    "input": 6382,
+    "output": 3124
   }
 }
