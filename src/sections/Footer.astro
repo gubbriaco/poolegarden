@@ -1,0 +1,158 @@
+---
+import logo from "../assets/logo.png";
+import { translations } from "../i18n/translations";
+import { site, navLinks, serviceLinks } from "../data/site";
+import Icon from "../components/Icon.astro";
+
+const t = translations.it as any;
+const tr = (path: string) =>
+  path.split(".").reduce((o: any, k: string) => (o == null ? undefined : o[k]), t);
+
+const socials = [
+  { icon: "facebook", href: site.social.facebook, label: "Facebook" },
+  { icon: "instagram", href: site.social.instagram, label: "Instagram" },
+  { icon: "linkedin", href: site.social.linkedin, label: "LinkedIn" },
+];
+const legalLinks = [
+  { href: "/privacy", key: "footer.privacy" },
+  { href: "/cookie-policy", key: "footer.cookie" },
+  { href: "/terms", key: "footer.terms" },
+];
+---
+
+<footer class="bg-ocean-950 text-ocean-50/80">
+  <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <!-- Brand + socials -->
+      <div class="lg:col-span-4">
+        <a href="#top" class="inline-flex items-center gap-2" aria-label={site.name}>
+          <img src={logo.src} alt={`${site.name} logo`} width="160" height="40" class="h-10 w-auto" />
+          <span class="text-lg font-extrabold text-white">{site.name}</span>
+        </a>
+        <p class="mt-4 max-w-sm text-sm leading-relaxed" data-i18n="footer.tagline">
+          {t.footer.tagline}
+        </p>
+        <div class="mt-5 flex gap-3">
+          {
+            socials.map((s) => (
+              <a
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={s.label}
+                class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-ocean-100 transition hover:-translate-y-0.5 hover:bg-ocean-600 hover:text-white"
+              >
+                <Icon name={s.icon} class="h-5 w-5" />
+              </a>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <nav class="lg:col-span-2" aria-label={t.footer.exploreTitle}>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-white" data-i18n="footer.exploreTitle">
+          {t.footer.exploreTitle}
+        </h3>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          {
+            navLinks.map((l) => (
+              <li>
+                <a href={`#${l.id}`} class="transition hover:text-white" data-i18n={l.key}>
+                  {tr(l.key)}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <!-- Services -->
+      <nav class="lg:col-span-3" aria-label={t.footer.servicesTitle}>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-white" data-i18n="footer.servicesTitle">
+          {t.footer.servicesTitle}
+        </h3>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          {
+            serviceLinks.map((l) => (
+              <li>
+                <a href={`#${l.id}`} class="transition hover:text-white" data-i18n={l.key}>
+                  {tr(l.key)}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <!-- Contact -->
+      <div class="lg:col-span-3">
+        <h3 class="text-sm font-bold uppercase tracking-wider text-white" data-i18n="footer.contactTitle">
+          {t.footer.contactTitle}
+        </h3>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li class="flex items-start gap-2.5">
+            <Icon name="mapPin" class="mt-0.5 h-4 w-4 shrink-0 text-ocean-300" />
+            <span>{site.address.street}, {site.address.city}</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <Icon name="phone" class="h-4 w-4 shrink-0 text-ocean-300" />
+            <a href={`tel:${site.phoneHref}`} class="transition hover:text-white">{site.phone}</a>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <Icon name="mail" class="h-4 w-4 shrink-0 text-ocean-300" />
+            <a href={`mailto:${site.email}`} class="transition hover:text-white">{site.email}</a>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <Icon name="whatsapp" class="h-4 w-4 shrink-0 text-ocean-300" />
+            <a href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener noreferrer" class="transition hover:text-white">
+              WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Legal / company info -->
+    <div class="mt-12 border-t border-white/10 pt-6">
+      <p class="text-xs leading-relaxed text-ocean-100/60">
+        {site.legalName} — {site.address.street}, {site.address.city}, {site.address.country}
+        · <span>P.IVA {site.vatNumber}</span>
+      </p>
+      <div class="mt-5 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+        <p class="text-xs text-ocean-100/60">
+          © <span data-year>2026</span> {site.name} —
+          <span data-i18n="footer.rights">{t.footer.rights}</span>
+        </p>
+        <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs">
+          {
+            legalLinks.map((l) => (
+              <a href={l.href} class="transition hover:text-white" data-i18n={l.key}>
+                {tr(l.key)}
+              </a>
+            ))
+          }
+          <button
+            type="button"
+            data-cookie-settings-link
+            class="transition hover:text-white"
+            data-i18n="footer.cookieSettings"
+          >
+            {t.footer.cookieSettings}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button
+  type="button"
+  data-back-to-top
+  aria-label={t.common.backToTop}
+  data-i18n-attr="aria-label:common.backToTop"
+  class="fixed bottom-6 right-6 z-40 inline-flex h-11 w-11 items-center justify-center rounded-full bg-ocean-600 text-white shadow-lg opacity-0 transition-all duration-300 hover:-translate-y-0.5 hover:bg-ocean-700"
+>
+  <Icon name="arrowUp" class="h-5 w-5" />
+</button>

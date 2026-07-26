@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "title": "Pool & Garden | Realizzazione e Manutenzione Piscine, Irrigazione e Prati Sintetici",
+    "description": "Pool & Garden progetta, realizza e cura piscine, impianti di irrigazione e prati sintetici. Costruzione e manutenzione professionale per il tuo giardino in tutta Italia.",
+    "ogTitle": "Pool & Garden — Piscine, Irrigazione e Prati Sintetici",
+    "ogDescription": "Costruzione e manutenzione di piscine, impianti di irrigazione e prati sintetici. Richiedi un preventivo gratuito."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Servizi",
+    "about": "Chi siamo",
+    "gallery": "Progetti",
+    "testimonials": "Recensioni",
+    "contact": "Contatti",
+    "quote": "Richiedi un preventivo"
+  },
+  "lang": {
+    "label": "Seleziona lingua",
+    "it": "Italiano",
+    "en": "Inglese"
+  },
+  "common": {
+    "menu": "Apri menu",
+    "close": "Chiudi menu",
+    "getQuote": "Richiedi un preventivo",
+    "freeQuote": "Preventivo gratuito",
+    "readMore": "Scopri di più",
+    "backToTop": "Torna su"
+  },
+  "hero": {
+    "badge": "Costruiamo e curiamo spazi all'aperto dal 2005",
+    "titlePre": "Piscine, irrigazione e prati sintetici",
+    "titleHighlight": "su misura per te",
+    "subtitle": "Progettiamo, realizziamo e manteniamo spazi verdi e acquatici con materiali premium e oltre 20 anni di esperienza al tuo servizio.",
+    "ctaPrimary": "Richiedi un preventivo",
+    "ctaSecondary": "Scopri i servizi",
+    "stats": [
+      { "value": "20+", "label": "anni di esperienza" },
+      { "value": "500+", "label": "progetti realizzati" },
+      { "value": "3", "label": "servizi specializzati" },
+      { "value": "100%", "label": "clienti soddisfatti" }
+    ]
+  },
+  "servicesOverview": {
+    "eyebrow": "I nostri servizi",
+    "title": "Soluzioni complete per il tuo outdoor",
+    "subtitle": "Tre aree di competenza, un unico riferimento affidabile per la progettazione, la realizzazione e la manutenzione dei tuoi spazi verdi.",
+    "learnMore": "Approfondisci",
+    "cards": {
+      "piscine": {
+        "title": "Piscine",
+        "desc": "Piscine interrate e fuoriterra progettate su misura, efficienti e durevoli nel tempo."
+      },
+      "irrigazione": {
+        "title": "Impianti di irrigazione",
+        "desc": "Sistemi automatizzati a basso consumo per un prato sempre sano e idratato."
+      },
+      "prati": {
+        "title": "Prati sintetici",
+        "desc": "Manti sintetici di alta qualità per giardini, arei commerciali e sportive."
+      }
+    }
+  },
+  "piscine": {
+    "eyebrow": "Piscine",
+    "title": "Piscine su misura, da sogno",
+    "intro": "Dalla prima idea al primo tuffo: ci occupiamo di tutto noi. Progettiamo piscine belle, sicure ed efficienti, curandone ogni dettaglio costruttivo e la manutenzione nel tempo.",
+    "construction": {
+      "tab": "Costruzione",
+      "eyebrow": "Realizzazione",
+      "title": "Costruiamo la tua piscina",
+      "desc": "Soluzioni complete di progettazione e costruzione: dallo scavo agli impianti, dalle finiture agli accessori, con materiali certificati e team specializzato.",
+      "features": [
+        "Progettazione 3D e rilievo topografico del sito",
+        "Strutture in cemento armato o kit modulari",
+        "Rivestimenti in membrane, piastrelle e resina",
+        "Sistemi di filtraggio e trattamento dell'acqua",
+        "Illuminazione LED e accessoristica premium",
+        "Permessi, pratiche burocratiche e garanzie"
+      ]
+    },
+    "maintenance": {
+      "tab": "Manutenzione",
+      "eyebrow": "Manutenzione",
+      "title": "Manteniamo l'acqua sempre perfetta",
+      "desc": "Piani di manutenzione su misura per mantenere l'acqua cristallina e gli impianti efficienti in ogni stagione.",
+      "features": [
+        "Pulizia fondo, pareti e skimmer",
+        "Trattamento e bilanciamento chimico dell'acqua",
+        "Apertura e chiusura stagionale",
+        "Riparazione pompe, filtri e perdite",
+        "Controllo e sostituzione dei filtri"
+      ]
+    },
+    "cta": "Richiedi un preventivo gratuito"
+  },
+  "irrigazione": {
+    "eyebrow": "Impianti di irrigazione",
+    "title": "Irrigazione intelligente, zero sprechi",
+    "intro": "Progettiamo impianti di irrigazione che risparmiano acqua e tempo, mantenendo giardini e prati sani grazie all'automazione e alle tecnologie a risparmio idrico.",
+    "construction": {
+      "tab": "Costruzione",
+      "eyebrow": "Realizzazione",
+      "title": "Progettiamo il tuo impianto",
+      "desc": "Studiamo la portata, la pressione e le reali esigenze del tuo verde per installare un sistema efficiente, invisibile e affidabile.",
+      "features": [
+        "Progettazione idraulica e zona per zona",
+        "Centraline automatizzate e programmabili",
+        "Sensori meteo e di umidità del terreno",
+        "Irrigatori a battente, a goccia e sotterranei",
+        "Tecnologie water-saving e raccordi premium",
+        "Integrazione con domotica e app"
+      ]
+    },
+    "maintenance": {
+      "tab": "Manutenzione",
+      "eyebrow": "Manutenzione",
+      "title": "Impianti sempre efficienti",
+      "desc": "Controlli periodici, riparazioni e regolazioni stagionali per prevenire guasti e sprechi d'acqua.",
+      "features": [
+        "Ispezioni e test di funzionamento",
+        "Riparazione perdite e sostituzione ugelli",
+        "Regolazione e riprogrammazione stagionale",
+        "Svuotamento e svernamento invernale",
+        "Aggiornamento centraline e sensori"
+      ]
+    },
+    "cta": "Richiedi un preventivo gratuito"
+  },
+  "prati": {
+    "eyebrow": "Prati sintetici",
+    "title": "Prati sintetici sempre verdi",
+    "intro": "Manti sintetici di alta qualità, realistici e durevoli, perfetti per chi desidera un prato perfetto tutto l'anno senza fatica, acqua né sfalci.",
+    "construction": {
+      "tab": "Installazione",
+      "eyebrow": "Realizzazione",
+      "title": "Installiamo il tuo prato perfetto",
+      "desc": "Preparazione del fondo, posa e finitura curata per un risultato naturale, stabile e duraturo nel tempo.",
+      "features": [
+        "Preparazione e livellamento del fondo",
+        "Manti in polietilene realistici anticradamento",
+        "Infill in sabbia e granuli SBR/organico",
+        "Pose per uso residenziale, commerciale e sportivo",
+        "Giunzioni invisibili e fissaggi perimetrali",
+        "Drenaggio e pendenze calcolate su misura"
+      ]
+    },
+    "maintenance": {
+      "tab": "Manutenzione",
+      "eyebrow": "Manutenzione",
+      "title": "Il prato come nuovo, più a lungo",
+      "desc": "Manutenzione periodica per mantenere il manto dritto, pulito e comodo, prolungandone la vita utile.",
+      "features": [
+        "Spazzolatura e rinfresco delle fibre",
+        "Rimozione foglie, erbacce e sporco",
+        "Rabbocco dell'infill di sabbia",
+        "Riparazione di strappi e giunzioni",
+        "Sanificazione e trattamento anti-odore"
+      ]
+    },
+    "cta": "Richiedi un preventivo gratuito"
+  },
+  "about": {
+    "eyebrow": "Chi siamo",
+    "title": "La passione per il verde e l'acqua dal 2005",
+    "p1": "Pool & Garden è un'azienda italiana specializzata nella realizzazione e manutenzione di piscine, impianti di irrigazione e prati sintetici. Da oltre vent'anni trasformiamo spazi esterni ordinari in ambienti accoglienti, funzionali e belli da vivere.",
+    "p2": "Il nostro team unisce esperienza tecnica, cura artigianale dei dettagli e l'uso di materiali premium certificati. Seguiamo ogni progetto dalla prima idea alla consegna chiavi in mano, e restiamo al tuo fianco con la manutenzione nel tempo.",
+    "missionTitle": "La nostra missione",
+    "missionText": "Creare spazi all'aperto che migliorino la qualità della vita delle persone, unendo design, sostenibilità e affidabilità, con un servizio trasparente e su misura.",
+    "valuesTitle": "I nostri valori",
+    "values": [
+      { "title": "Qualità", "desc": "Materiali certificati e lavorazioni curate in ogni dettaglio." },
+      { "title": "Trasparenza", "desc": "Preventivi chiari, senza sorprese, e consulenza onesta." },
+      { "title": "Sostenibilità", "desc": "Tecnologie a risparmio idrico e rispetto per l'ambiente." }
+    ],
+    "whyTitle": "Perché scegliere Pool & Garden",
+    "why": [
+      "Oltre 20 anni di esperienza sul campo",
+      "Materiali e impianti certificati e garantiti",
+      "Team specializzato e referenziato",
+      "Servizio completo: progetto, installazione e manutenzione",
+      "Copertura del servizio su tutto il territorio",
+      "Assistenza post-vendita rapida e dedicata"
+    ],
+    "teamTitle": "Il nostro team",
+    "teamSubtitle": "Persone appassionate che danno vita ai tuoi progetti."
+  },
+  "testimonials": {
+    "eyebrow": "Recensioni",
+    "title": "La fiducia dei nostri clienti",
+    "subtitle": "Oltre 500 progetti realizzati con la massima cura. Ecco cosa raccontano di noi.",
+    "items": [
+      { "name": "Marco Bellini", "location": "Bergamo", "text": "Piscina costruita nei tempi previsti e con finiture impeccabili. Team serio e puntuale, altamente consigliati." },
+      { "name": "Giulia Ratti", "location": "Milano", "text": "Hanno rifatto tutto l'impianto di irrigazione: prato verde e bolletta ridotta. Professionalità top." },
+      { "name": "Familia Conti", "location": "Brescia", "text": "Prato sintetico di ottima qualità, sembra vero. Installazione pulita e veloce, zero manutenzione." },
+      { "name": "Luca Ferrari", "location": "Como", "text": "Manutenzione piscina puntuale e accurata. Acqua sempre cristallina per tutta l'estate." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Progetti",
+    "title": "I nostri lavori",
+    "subtitle": "Una selezione di progetti realizzati: piscine, giardini e prati sintetici. (Immagini placeholder — sostituibili con le foto dei cantieri reali.)",
+    "captions": [
+      "Piscina residenziale con finiture in resina",
+      "Sistema di irrigazione interrato automatizzato",
+      "Prato sintetico per giardino residenziale",
+      "Piscina infinity con illuminazione LED",
+      "Area verde con prato e irrigazione a goccia",
+      "Campo sportivo in erba sintetica"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contatti",
+    "title": "Parliamo del tuo progetto",
+    "subtitle": "Raccontaci la tua idea: ti risponderemo con una consulenza e un preventivo gratuito, senza impegno.",
+    "phoneLabel": "Telefono",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "addressLabel": "Sede",
+    "hoursLabel": "Orari",
+    "hoursValue": "Lun–Ven: 8:30–18:30 · Sab: 9:00–12:30",
+    "mapTitle": "Dove siamo",
+    "form": {
+      "title": "Scrivici",
+      "name": "Nome e cognome",
+      "namePh": "Mario Rossi",
+      "email": "Email",
+      "emailPh": "mario.rossi@email.it",
+      "phone": "Telefono",
+      "phonePh": "+39 333 1234567",
+      "service": "Servizio di interesse",
+      "serviceDefault": "Seleziona un servizio",
+      "serviceOptions": [
+        "Costruzione piscina",
+        "Manutenzione piscina",
+        "Impianto di irrigazione",
+        "Prato sintetico",
+        "Altro"
+      ],
+      "message": "Messaggio",
+      "messagePh": "Raccontaci il tuo progetto...",
+      "consent": "Ho letto e accetto l'informativa sulla privacy.",
+      "submit": "Invia richiesta",
+      "success": "Grazie! La tua richiesta è stata inviata. Ti contatteremo presto.",
+      "error": "Si è verificato un errore. Riprova oppure contattaci telefonicamente."
+    }
+  },
+  "newsletter": {
+    "title": "Resta aggiornato",
+    "subtitle": "Idee, consigli e offerte per il tuo outdoor. Iscriviti alla nostra newsletter.",
+    "placeholder": "La tua email",
+    "button": "Iscriviti",
+    "success": "Iscrizione confermata! Grazie per esserti iscritto.",
+    "disclaimer": "Iscrivendoti accetti la nostra informativa sulla privacy. Nessuno spam, disiscrizione in ogni momento."
+  },
+  "footer": {
+    "tagline": "Costruzione e manutenzione di piscine, impianti di irrigazione e prati sintetici. Il tuo outdoor, curato in ogni dettaglio.",
+    "exploreTitle": "Esplora",
+    "servicesTitle": "Servizi",
+    "contactTitle": "Contatti",
+    "followTitle": "Seguici",
+    "rights": "Tutti i diritti riservati.",
+    "legalLinksTitle": "Legale",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy",
+    "terms": "Termini e Condizioni",
+    "cookieSettings": "Impostazioni cookie"
+  },
+  "cookie": {
+    "title": "Rispetto della tua privacy",
+    "text": "Utilizziamo cookie tecnici e, previo consenso, cookie di analisi e terze parti (mappa, social) per migliorare la tua esperienza. Leggi la nostra Cookie Policy.",
+    "accept": "Accetta tutti",
+    "reject": "Rifiuta non essenziali",
+    "link": "Cookie Policy"
+  },
+  "notfound": {
+    "title": "Pagina non trovata",
+    "text": "La pagina che cerchi non esiste o è stata spostata.",
+    "home": "Torna alla home"
+  },
+  "legal": {
+    "updated": "Ultimo aggiornamento: Gennaio 2026",
+    "privacy": {
+      "title": "Informativa sulla Privacy",
+      "body": [
+        "La presente informativa descrive come Pool & Garden raccoglie, utilizza e protegge i dati personali degli utenti del sito, in conformità al Regolamento (UE) 2016/679 (GDPR).",
+        "Titolare del trattamento è Pool & Garden S.r.l., con sede in Via del Giardino 12, 20121 Milano (MI), Italia. Le finalità del trattamento includono: rispondere alle richieste inviate tramite i moduli del sito (contatto, preventivo, newsletter) e fornire i servizi richiesti.",
+        "Il trattamento avviene con il consenso dell'interessato e/o per l'esecuzione di un contratto. I dati sono conservati per il tempo strettamente necessario e comunque non oltre i termini di legge.",
+        "L'utente può esercitare in ogni momento i diritti di accesso, rettifica, cancellazione, limitazione, opposizione e portabilità scrivendo all'indirizzo email indicato nei contatti.",
+        "Questa è una informativa placeholder: sostituirla con l'informativa legale completa e aggiornata redatta dal titolare del trattamento."
+      ]
+    },
+    "cookie": {
+      "title": "Cookie Policy",
+      "body": [
+        "Il sito utilizza cookie tecnici necessari al corretto funzionamento (sessione, preferenze di lingua, banner di consenso). Questi cookie non richiedono consenso.",
+        "Previo consenso, il sito può utilizzare cookie analitici (es. statistiche aggregate) e di terze parti per la visualizzazione della mappa e i pulsanti social.",
+        "Puoi gestire o revocare il tuo consenso in qualsiasi momento utilizzando il pulsante 'Impostazioni cookie' nel piè di pagina.",
+        "Questa è una policy placeholder: sostituirla con l'informativa cookie completa, inclusivo di elenco dettagliato dei cookie utilizzati."
+      ]
+    },
+    "terms": {
+      "title": "Termini e Condizioni",
+      "body": [
+        "L'utilizzo del sito implica l'accettazione dei presenti termini e condizioni. Tutti i contenuti (testi, immagini, loghi) sono di proprietà di Pool & Garden e non possono essere riprodotti senza autorizzazione.",
+        "Le informazioni presenti sul sito hanno carattere illustrativo e non costituiscono offerta vincolante. I preventivi sono regolarizzati dai relativi documenti contrattuali.",
+        "Per qualsiasi controversia è competente il Foro di Milano, con applicazione della legge italiana.",
+        "Questa è una pagina placeholder: sostituirla con i termini e condizioni legali completi."
+      ]
+    }
+  }
+}

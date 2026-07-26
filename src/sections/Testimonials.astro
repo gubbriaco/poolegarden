@@ -1,0 +1,61 @@
+---
+import { translations } from "../i18n/translations";
+import SectionHeading from "../components/SectionHeading.astro";
+import Icon from "../components/Icon.astro";
+
+const t = translations.it as any;
+---
+
+<section id="recensioni" class="scroll-mt-24 bg-sand-50 py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <SectionHeading
+      eyebrowKey="testimonials.eyebrow"
+      titleKey="testimonials.title"
+      subtitleKey="testimonials.subtitle"
+      data-reveal
+    />
+
+    <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {
+        t.testimonials.items.map((item: any, i: number) => (
+          <figure
+            class="flex h-full flex-col rounded-3xl border border-slate-100 bg-white p-6 shadow-sm"
+            data-reveal
+            data-reveal-delay={String(((i % 4) + 1))}
+          >
+            <div class="flex gap-0.5 text-amber-400" aria-hidden="true">
+              {Array.from({ length: 5 }).map(() => (
+                <Icon name="star" class="h-4 w-4" />
+              ))}
+            </div>
+            <blockquote
+              class="mt-4 flex-1 text-sm leading-relaxed text-slate-700"
+              data-i18n={`testimonials.items.${i}.text`}
+            >
+              {item.text}
+            </blockquote>
+            <figcaption class="mt-5 flex items-center gap-3 border-t border-slate-200 pt-4">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-ocean-600 font-bold text-white">
+                {item.name.charAt(0)}
+              </span>
+              <span>
+                <span
+                  class="block text-sm font-bold text-ocean-950"
+                  data-i18n={`testimonials.items.${i}.name`}
+                >
+                  {item.name}
+                </span>
+                <span
+                  class="block text-xs text-slate-500"
+                  data-i18n={`testimonials.items.${i}.location`}
+                >
+                  {item.location}
+                </span>
+              </span>
+            </figcaption>
+          </figure>
+        ))
+      }
+    </div>
+  </div>
+</section>

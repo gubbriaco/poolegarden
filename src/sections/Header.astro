@@ -1,0 +1,105 @@
+---
+import logo from "../assets/logo.png";
+import { navLinks, site } from "../data/site";
+import LanguageSwitcher from "../components/LanguageSwitcher.astro";
+import CTAButton from "../components/CTAButton.astro";
+import Icon from "../components/Icon.astro";
+
+import { translations } from "../i18n/translations";
+const t = translations.it as any;
+const tr = (path: string) =>
+  path.split(".").reduce((o: any, k: string) => (o == null ? undefined : o[k]), t);
+---
+
+<header
+  id="top"
+  class="sticky top-0 z-50 border-b border-ocean-100/70 bg-white/85 backdrop-blur-md supports-[backdrop-filter]:bg-white/70"
+>
+  <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8" aria-label="Main">
+    <!-- Brand -->
+    <a href="#top" class="flex items-center gap-2.5" aria-label={`${site.name} — home`}>
+      <img
+        src={logo.src}
+        alt={`${site.name} logo`}
+        width="160"
+        height="40"
+        class="h-9 w-auto sm:h-10"
+      />
+      <span class="sr-only">{site.name}</span>
+      <span class="hidden text-lg font-extrabold tracking-tight text-ocean-800 sm:inline">
+        {site.name}
+      </span>
+    </a>
+
+    <!-- Desktop nav -->
+    <ul class="hidden items-center gap-1 lg:flex">
+      {
+        navLinks.map((l) => (
+          <li>
+            <a
+              href={`#${l.id}`}
+              class="rounded-full px-3.5 py-2 text-sm font-semibold text-slate-700 transition hover:bg-ocean-50 hover:text-ocean-700"
+              data-i18n={l.key}
+            >
+              {tr(l.key)}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <!-- Right side -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <div class="hidden sm:block">
+        <LanguageSwitcher />
+      </div>
+      <div class="hidden sm:block">
+        <CTAButton href="#contatti" size="md" class="!px-4">
+          <span data-i18n="nav.quote">{t.nav.quote}</span>
+        </CTAButton>
+      </div>
+
+      <!-- Mobile menu toggle -->
+      <button
+        type="button"
+        data-menu-toggle
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-i18n-attr="aria-label:common.menu"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ocean-100 text-ocean-700 lg:hidden"
+      >
+        <Icon name="menu" class="h-6 w-6" data-menu-icon-open />
+        <Icon name="close" class="hidden h-6 w-6" data-menu-icon-close />
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div
+    id="mobile-menu"
+    data-mobile-menu
+    class="hidden flex-col gap-4 border-t border-ocean-100 bg-white px-4 py-5 lg:hidden"
+  >
+    <ul class="flex flex-col gap-1">
+      {
+        navLinks.map((l) => (
+          <li>
+            <a
+              href={`#${l.id}`}
+              class="block rounded-xl px-4 py-3 text-base font-semibold text-slate-700 hover:bg-ocean-50 hover:text-ocean-700"
+              data-i18n={l.key}
+            >
+              {tr(l.key)}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="flex items-center justify-between gap-4">
+      <LanguageSwitcher />
+      <CTAButton href="#contatti" class="flex-1 justify-center">
+        <span data-i18n="nav.quote">{t.nav.quote}</span>
+      </CTAButton>
+    </div>
+  </div>
+</header>

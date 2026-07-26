@@ -1,0 +1,131 @@
+{
+  "communities": {
+    "0": [
+      "ref",
+      "ref_astro_tsconfigs_strict",
+      "ref_astro_types_d_ts",
+      "ref_dist",
+      "tsconfig",
+      "tsconfig_exclude",
+      "tsconfig_extends",
+      "tsconfig_include"
+    ],
+    "1": [
+      "astro",
+      "package_dependencies",
+      "package_dependencies_astro",
+      "package_dependencies_tailwindcss",
+      "package_dependencies_tailwindcss_vite",
+      "tailwindcss",
+      "tailwindcss_vite"
+    ],
+    "2": [
+      "package",
+      "package_engines",
+      "package_engines_node",
+      "package_name",
+      "package_type",
+      "package_version"
+    ],
+    "3": [
+      "package_scripts",
+      "package_scripts_astro",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_preview"
+    ],
+    "4": [
+      "src_components_welcome",
+      "src_components_welcome_screen",
+      "src_layouts_layout",
+      "src_pages_index"
+    ],
+    "5": [
+      "agents_md",
+      "claude_md",
+      "graphify_concept"
+    ],
+    "6": [
+      "astro_framework",
+      "readme_md"
+    ],
+    "7": [
+      "astro_config"
+    ],
+    "8": [
+      "public_favicon"
+    ],
+    "9": [
+      "src_assets_astro_svg"
+    ]
+  },
+  "cohesion": {
+    "0": 0.25,
+    "1": 0.2857142857142857,
+    "2": 0.3333333333333333,
+    "3": 0.4,
+    "4": 0.5,
+    "5": 0.6666666666666666,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "tsconfig_include",
+      "label": "include",
+      "degree": 3
+    },
+    {
+      "id": "package_engines",
+      "label": "engines",
+      "degree": 2
+    },
+    {
+      "id": "package_dependencies_tailwindcss_vite",
+      "label": "@tailwindcss/vite",
+      "degree": 2
+    },
+    {
+      "id": "package_dependencies_astro",
+      "label": "astro",
+      "degree": 2
+    },
+    {
+      "id": "package_dependencies_tailwindcss",
+      "label": "tailwindcss",
+      "degree": 2
+    },
+    {
+      "id": "tsconfig_exclude",
+      "label": "exclude",
+      "degree": 2
+    },
+    {
+      "id": "graphify_concept",
+      "label": "Graphify Knowledge Graph",
+      "degree": 2
+    },
+    {
+      "id": "package_engines_node",
+      "label": "node",
+      "degree": 1
+    },
+    {
+      "id": "package_scripts_dev",
+      "label": "dev",
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 6935,
+    "output": 956
+  }
+}

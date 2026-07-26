@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560" role="img" aria-label="Infinity pool at night placeholder">
+  <defs>
+    <linearGradient id="p2sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#062836"/><stop offset="1" stop-color="#134e64"/>
+    </linearGradient>
+    <linearGradient id="p2water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3ab1c4"/><stop offset="1" stop-color="#144055"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="560" fill="url(#p2sky)"/>
+  <!-- stars -->
+  <g fill="#eefbfd">
+    <circle cx="90" cy="70" r="1.6"/><circle cx="200" cy="120" r="1.4"/><circle cx="320" cy="60" r="1.6"/>
+    <circle cx="470" cy="100" r="1.4"/><circle cx="600" cy="70" r="1.8"/><circle cx="650" cy="150" r="1.4"/>
+  </g>
+  <rect x="0" y="430" width="720" height="130" fill="#21401d"/>
+  <rect x="40" y="250" width="640" height="190" rx="20" fill="url(#p2water)"/>
+  <!-- infinity edge glow -->
+  <rect x="40" y="246" width="640" height="6" fill="#d4f2f6" opacity="0.8"/>
+  <!-- LED lights -->
+  <g fill="#d4f2f6">
+    <circle cx="150" cy="400" r="6"/><circle cx="360" cy="410" r="6"/><circle cx="570" cy="400" r="6"/>
+  </g>
+  <g stroke="#eefbfd" stroke-width="4" opacity="0.3" stroke-linecap="round">
+    <line x1="120" y1="320" x2="240" y2="320"/><line x1="430" y1="350" x2="560" y2="350"/>
+  </g>
+</svg>

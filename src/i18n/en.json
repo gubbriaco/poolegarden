@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "title": "Pool & Garden | Construction & Maintenance of Pools, Irrigation and Artificial Lawns",
+    "description": "Pool & Garden designs, builds and maintains swimming pools, irrigation systems and artificial lawns. Professional construction and maintenance for your garden across Italy.",
+    "ogTitle": "Pool & Garden — Pools, Irrigation and Artificial Lawns",
+    "ogDescription": "Construction and maintenance of swimming pools, irrigation systems and artificial lawns. Request a free quote."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "gallery": "Projects",
+    "testimonials": "Reviews",
+    "contact": "Contact",
+    "quote": "Request a quote"
+  },
+  "lang": {
+    "label": "Select language",
+    "it": "Italian",
+    "en": "English"
+  },
+  "common": {
+    "menu": "Open menu",
+    "close": "Close menu",
+    "getQuote": "Request a quote",
+    "freeQuote": "Free quote",
+    "readMore": "Learn more",
+    "backToTop": "Back to top"
+  },
+  "hero": {
+    "badge": "Building and caring for outdoor spaces since 2005",
+    "titlePre": "Pools, irrigation and artificial lawns",
+    "titleHighlight": "tailored for you",
+    "subtitle": "We design, build and maintain green and water spaces with premium materials and over 20 years of experience at your service.",
+    "ctaPrimary": "Request a quote",
+    "ctaSecondary": "Explore services",
+    "stats": [
+      { "value": "20+", "label": "years of experience" },
+      { "value": "500+", "label": "projects completed" },
+      { "value": "3", "label": "specialised services" },
+      { "value": "100%", "label": "satisfied clients" }
+    ]
+  },
+  "servicesOverview": {
+    "eyebrow": "Our services",
+    "title": "Complete solutions for your outdoors",
+    "subtitle": "Three areas of expertise, one trusted partner for the design, construction and maintenance of your outdoor spaces.",
+    "learnMore": "Learn more",
+    "cards": {
+      "piscine": {
+        "title": "Swimming pools",
+        "desc": "In-ground and above-ground pools, custom-designed, efficient and built to last."
+      },
+      "irrigazione": {
+        "title": "Irrigation systems",
+        "desc": "Automated, low-consumption systems for a lawn that stays healthy and hydrated."
+      },
+      "prati": {
+        "title": "Artificial lawns",
+        "desc": "High-quality artificial turf for gardens, commercial areas and sports grounds."
+      }
+    }
+  },
+  "piscine": {
+    "eyebrow": "Pools",
+    "title": "Custom pools, like a dream",
+    "intro": "From the first idea to the first dive, we take care of everything. We build beautiful, safe and efficient pools, looking after every construction detail and their maintenance over time.",
+    "construction": {
+      "tab": "Construction",
+      "eyebrow": "Build",
+      "title": "We build your pool",
+      "desc": "Full design and construction services: from excavation to systems, from finishes to accessories, using certified materials and a specialised team.",
+      "features": [
+        "3D design and topographic site survey",
+        "Reinforced concrete structures or modular kits",
+        "Liners, tile and resin finishes",
+        "Water filtration and treatment systems",
+        "LED lighting and premium accessories",
+        "Permits, paperwork and warranties"
+      ]
+    },
+    "maintenance": {
+      "tab": "Maintenance",
+      "eyebrow": "Maintenance",
+      "title": "We keep the water perfect",
+      "desc": "Tailored maintenance plans to keep the water crystal clear and the systems efficient in every season.",
+      "features": [
+        "Floor, wall and skimmer cleaning",
+        "Chemical treatment and water balancing",
+        "Seasonal opening and closing",
+        "Pump, filter and leak repairs",
+        "Filter inspection and replacement"
+      ]
+    },
+    "cta": "Request a free quote"
+  },
+  "irrigazione": {
+    "eyebrow": "Irrigation systems",
+    "title": "Smart irrigation, zero waste",
+    "intro": "We design irrigation systems that save water and time, keeping gardens and lawns healthy through automation and water-saving technologies.",
+    "construction": {
+      "tab": "Construction",
+      "eyebrow": "Build",
+      "title": "We design your system",
+      "desc": "We study flow, pressure and the real needs of your greenery to install an efficient, invisible and reliable system.",
+      "features": [
+        "Hydraulic design zone by zone",
+        "Automated, programmable controllers",
+        "Weather and soil moisture sensors",
+        "Rotor, drip and underground sprinklers",
+        "Water-saving technology and premium fittings",
+        "Smart home and app integration"
+      ]
+    },
+    "maintenance": {
+      "tab": "Maintenance",
+      "eyebrow": "Maintenance",
+      "title": "Efficient systems, always",
+      "desc": "Periodic checks, repairs and seasonal adjustments to prevent failures and water waste.",
+      "features": [
+        "Inspections and operation tests",
+        "Leak repairs and nozzle replacement",
+        "Seasonal adjustment and reprogramming",
+        "Winter draining and winterisation",
+        "Controller and sensor upgrades"
+      ]
+    },
+    "cta": "Request a free quote"
+  },
+  "prati": {
+    "eyebrow": "Artificial lawns",
+    "title": "Evergreen artificial lawns",
+    "intro": "High-quality, realistic and durable turf, perfect for those who want a flawless lawn all year round with no effort, water or mowing.",
+    "construction": {
+      "tab": "Installation",
+      "eyebrow": "Build",
+      "title": "We install your perfect lawn",
+      "desc": "Base preparation, installation and careful finishing for a natural, stable and long-lasting result.",
+      "features": [
+        "Base preparation and levelling",
+        "Realistic anti-crush polyethylene turf",
+        "Sand infill and SBR/organic granules",
+        "Residential, commercial and sports installation",
+        "Invisible seams and perimeter fixings",
+        "Custom drainage and gradients"
+      ]
+    },
+    "maintenance": {
+      "tab": "Maintenance",
+      "eyebrow": "Maintenance",
+      "title": "A like-new lawn, for longer",
+      "desc": "Periodic maintenance to keep the turf upright, clean and comfortable, extending its lifespan.",
+      "features": [
+        "Brushing and fibre refreshing",
+        "Removal of leaves, weeds and dirt",
+        "Sand infill top-up",
+        "Repair of tears and seams",
+        "Sanitisation and anti-odour treatment"
+      ]
+    },
+    "cta": "Request a free quote"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A passion for greenery and water since 2005",
+    "p1": "Pool & Garden is an Italian company specialised in the construction and maintenance of swimming pools, irrigation systems and artificial lawns. For over twenty years we have been turning ordinary outdoor spaces into welcoming, functional and beautiful places to live.",
+    "p2": "Our team combines technical expertise, craftsmanship and the use of premium certified materials. We follow every project from the first idea to a turnkey delivery, and stay by your side with long-term maintenance.",
+    "missionTitle": "Our mission",
+    "missionText": "To create outdoor spaces that improve people's quality of life, combining design, sustainability and reliability with transparent, tailored service.",
+    "valuesTitle": "Our values",
+    "values": [
+      { "title": "Quality", "desc": "Certified materials and meticulous workmanship in every detail." },
+      { "title": "Transparency", "desc": "Clear quotes, no surprises, and honest advice." },
+      { "title": "Sustainability", "desc": "Water-saving technologies and respect for the environment." }
+    ],
+    "whyTitle": "Why choose Pool & Garden",
+    "why": [
+      "Over 20 years of field experience",
+      "Certified, guaranteed materials and systems",
+      "Specialised, referenced team",
+      "Full service: design, installation and maintenance",
+      "Service coverage across the country",
+      "Fast, dedicated after-sales support"
+    ],
+    "teamTitle": "Our team",
+    "teamSubtitle": "Passionate people who bring your projects to life."
+  },
+  "testimonials": {
+    "eyebrow": "Reviews",
+    "title": "Our clients' trust",
+    "subtitle": "Over 500 projects delivered with the utmost care. Here is what they say about us.",
+    "items": [
+      { "name": "Marco Bellini", "location": "Bergamo", "text": "Pool built on schedule and with flawless finishes. Serious and punctual team, highly recommended." },
+      { "name": "Giulia Ratti", "location": "Milan", "text": "They redid the entire irrigation system: green lawn and lower bill. Top professionalism." },
+      { "name": "Conti Family", "location": "Brescia", "text": "Excellent quality artificial lawn, it looks real. Clean and fast installation, zero maintenance." },
+      { "name": "Luca Ferrari", "location": "Como", "text": "Punctual and thorough pool maintenance. Crystal-clear water all summer long." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Projects",
+    "title": "Our work",
+    "subtitle": "A selection of completed projects: pools, gardens and artificial lawns. (Placeholder images — replace with real site photos.)",
+    "captions": [
+      "Residential pool with resin finish",
+      "Automated underground irrigation system",
+      "Artificial lawn for a residential garden",
+      "Infinity pool with LED lighting",
+      "Green area with lawn and drip irrigation",
+      "Sports field in artificial turf"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's talk about your project",
+    "subtitle": "Tell us your idea: we'll reply with advice and a free, no-obligation quote.",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "addressLabel": "Office",
+    "hoursLabel": "Hours",
+    "hoursValue": "Mon–Fri: 8:30am–6:30pm · Sat: 9:00am–12:30pm",
+    "mapTitle": "Where we are",
+    "form": {
+      "title": "Write to us",
+      "name": "Full name",
+      "namePh": "John Smith",
+      "email": "Email",
+      "emailPh": "john.smith@email.com",
+      "phone": "Phone",
+      "phonePh": "+39 333 1234567",
+      "service": "Service of interest",
+      "serviceDefault": "Select a service",
+      "serviceOptions": [
+        "Pool construction",
+        "Pool maintenance",
+        "Irrigation system",
+        "Artificial lawn",
+        "Other"
+      ],
+      "message": "Message",
+      "messagePh": "Tell us about your project...",
+      "consent": "I have read and accept the privacy policy.",
+      "submit": "Send request",
+      "success": "Thank you! Your request has been sent. We'll get back to you soon.",
+      "error": "An error occurred. Please try again or contact us by phone."
+    }
+  },
+  "newsletter": {
+    "title": "Stay updated",
+    "subtitle": "Ideas, tips and offers for your outdoors. Subscribe to our newsletter.",
+    "placeholder": "Your email",
+    "button": "Subscribe",
+    "success": "Subscription confirmed! Thank you for subscribing.",
+    "disclaimer": "By subscribing you accept our privacy policy. No spam, unsubscribe anytime."
+  },
+  "footer": {
+    "tagline": "Construction and maintenance of swimming pools, irrigation systems and artificial lawns. Your outdoors, cared for in every detail.",
+    "exploreTitle": "Explore",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "followTitle": "Follow us",
+    "rights": "All rights reserved.",
+    "legalLinksTitle": "Legal",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy",
+    "terms": "Terms & Conditions",
+    "cookieSettings": "Cookie settings"
+  },
+  "cookie": {
+    "title": "Respecting your privacy",
+    "text": "We use technical cookies and, with your consent, analytics and third-party cookies (map, social) to improve your experience. Read our Cookie Policy.",
+    "accept": "Accept all",
+    "reject": "Reject non-essential",
+    "link": "Cookie Policy"
+  },
+  "notfound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has been moved.",
+    "home": "Back to home"
+  },
+  "legal": {
+    "updated": "Last updated: January 2026",
+    "privacy": {
+      "title": "Privacy Policy",
+      "body": [
+        "This policy describes how Pool & Garden collects, uses and protects the personal data of website users, in compliance with Regulation (EU) 2016/679 (GDPR).",
+        "The data controller is Pool & Garden S.r.l., based in Via del Giardino 12, 20121 Milan (MI), Italy. The purposes of processing include: responding to requests sent via the site forms (contact, quote, newsletter) and providing the requested services.",
+        "Processing is carried out with the user's consent and/or for the performance of a contract. Data is kept for the strictly necessary time and in any case no longer than the legal terms.",
+        "The user may at any time exercise the rights of access, rectification, erasure, restriction, objection and portability by writing to the email address indicated in the contacts.",
+        "This is a placeholder notice: replace it with the complete and up-to-date legal notice drawn up by the data controller."
+      ]
+    },
+    "cookie": {
+      "title": "Cookie Policy",
+      "body": [
+        "The site uses technical cookies necessary for correct operation (session, language preferences, consent banner). These cookies do not require consent.",
+        "With consent, the site may use analytics cookies (e.g. aggregate statistics) and third-party cookies for displaying the map and social buttons.",
+        "You can manage or revoke your consent at any time using the 'Cookie settings' button in the footer.",
+        "This is a placeholder policy: replace it with the complete cookie notice, including a detailed list of the cookies used."
+      ]
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "body": [
+        "Using the site implies acceptance of these terms and conditions. All content (texts, images, logos) is owned by Pool & Garden and may not be reproduced without authorisation.",
+        "The information on the site is illustrative and does not constitute a binding offer. Quotes are governed by the relevant contractual documents.",
+        "Any dispute shall be subject to the jurisdiction of the Court of Milan, under Italian law.",
+        "This is a placeholder page: replace it with the full legal terms and conditions."
+      ]
+    }
+  }
+}

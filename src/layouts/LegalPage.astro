@@ -1,0 +1,43 @@
+---
+import Layout from "./Layout.astro";
+import Header from "../sections/Header.astro";
+import Footer from "../sections/Footer.astro";
+import CookieConsent from "../sections/CookieConsent.astro";
+import { translations } from "../i18n/translations";
+import { site } from "../data/site";
+
+type Section = "privacy" | "cookie" | "terms";
+interface Props {
+  section: Section;
+}
+const { section } = Astro.props;
+const t = translations.it as any;
+const data = t.legal[section];
+---
+
+<Layout title={`${data.title} — ${site.name}`} description={data.title}>
+  <Header />
+  <main id="main" class="bg-white">
+    <article class="mx-auto max-w-3xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
+      <a href="/#top" class="text-sm font-semibold text-ocean-600 hover:underline" data-i18n="notfound.home">
+        ← {t.notfound.home}
+      </a>
+      <h1
+        class="mt-4 font-display text-3xl font-extrabold text-ocean-950 sm:text-4xl"
+        data-i18n={`legal.${section}.title`}
+      >
+        {data.title}
+      </h1>
+      <p class="mt-2 text-sm text-slate-500" data-i18n="legal.updated">{t.legal.updated}</p>
+      <div class="prose mt-8 space-y-4 leading-relaxed text-slate-700">
+        {
+          data.body.map((p: string, i: number) => (
+            <p data-i18n={`legal.${section}.body.${i}`}>{p}</p>
+          ))
+        }
+      </div>
+    </article>
+  </main>
+  <Footer />
+  <CookieConsent />
+</Layout>

@@ -1,0 +1,213 @@
+---
+import { translations } from "../i18n/translations";
+import Icon from "../components/Icon.astro";
+import CTAButton from "../components/CTAButton.astro";
+
+/**
+ * Detailed service section with Construction / Maintenance tabs.
+ * @param prefix - i18n + data key: "piscine" | "irrigazione" | "prati"
+ */
+interface Props {
+  id: string;
+  prefix: string;
+  icon: string;
+  accent?: "ocean" | "leaf";
+  image: string;
+  reverse?: boolean;
+}
+const {
+  id,
+  prefix,
+  icon,
+  accent = "ocean",
+  image,
+  reverse = false,
+} = Astro.props;
+
+const t = translations.it as any;
+const data = t[prefix];
+
+const accentMap = {
+  ocean: {
+    chip: "bg-ocean-100 text-ocean-700",
+    ring: "ring-ocean-100",
+    cta: "primary" as const,
+  },
+  leaf: {
+    chip: "bg-leaf-100 text-leaf-700",
+    ring: "ring-leaf-100",
+    cta: "secondary" as const,
+  },
+};
+const a = accentMap[accent];
+
+const imgCol = reverse ? "lg:order-2" : "";
+const textCol = reverse ? "lg:order-1" : "";
+---
+
+<section id={id} class="scroll-mt-24 py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <!-- Text column -->
+      <div class={textCol} data-reveal>
+        <span
+          class={`inline-flex items-center gap-2 rounded-full ${a.chip} px-3 py-1 text-xs font-bold uppercase tracking-wider`}
+        >
+          <Icon name={icon} class="h-4 w-4" />
+          <span data-i18n={`${prefix}.eyebrow`}>{data.eyebrow}</span>
+        </span>
+        <h2
+          class="mt-4 font-display text-3xl font-extrabold text-ocean-950 sm:text-4xl"
+          data-i18n={`${prefix}.title`}
+        >
+          {data.title}
+        </h2>
+        <p class="mt-4 text-lg leading-relaxed text-slate-600" data-i18n={`${prefix}.intro`}>
+          {data.intro}
+        </p>
+
+        <!-- Tabs -->
+        <div class="mt-8" data-tabs>
+          <div
+            role="tablist"
+            aria-label="Service details"
+            class="inline-flex rounded-full border border-slate-200 bg-white p-1"
+          >
+            <button
+              type="button"
+              role="tab"
+              data-tab-btn="construction"
+              aria-selected="true"
+              aria-controls={`${id}-construction`}
+              class="tab-btn rounded-full px-5 py-2 text-sm font-semibold text-ocean-700 transition"
+              data-i18n={`${prefix}.construction.tab`}
+            >
+              {data.construction.tab}
+            </button>
+            <button
+              type="button"
+              role="tab"
+              data-tab-btn="maintenance"
+              aria-selected="false"
+              aria-controls={`${id}-maintenance`}
+              class="tab-btn rounded-full px-5 py-2 text-sm font-semibold text-ocean-700 transition"
+              data-i18n={`${prefix}.maintenance.tab`}
+            >
+              {data.maintenance.tab}
+            </button>
+          </div>
+
+          <!-- Construction panel -->
+          <div
+            id={`${id}-construction`}
+            role="tabpanel"
+            data-tab-panel="construction"
+            class="mt-6"
+          >
+            <h3
+              class="text-xl font-bold text-ocean-900"
+              data-i18n={`${prefix}.construction.title`}
+            >
+              {data.construction.title}
+            </h3>
+            <p
+              class="mt-2 leading-relaxed text-slate-600"
+              data-i18n={`${prefix}.construction.desc`}
+            >
+              {data.construction.desc}
+            </p>
+            <ul class="mt-5 grid gap-3 sm:grid-cols-2">
+              {
+                data.construction.features.map((feat: string, i: number) => (
+                  <li class="flex items-start gap-2.5 text-sm text-slate-700">
+                    <Icon
+                      name="checkCircle"
+                      class={`mt-0.5 h-5 w-5 shrink-0 ${
+                        accent === "leaf" ? "text-leaf-600" : "text-ocean-600"
+                      }`}
+                    />
+                    <span data-i18n={`${prefix}.construction.features.${i}`}>
+                      {feat}
+                    </span>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+
+          <!-- Maintenance panel -->
+          <div
+            id={`${id}-maintenance`}
+            role="tabpanel"
+            data-tab-panel="maintenance"
+            hidden
+            class="mt-6"
+          >
+            <h3
+              class="text-xl font-bold text-ocean-900"
+              data-i18n={`${prefix}.maintenance.title`}
+            >
+              {data.maintenance.title}
+            </h3>
+            <p
+              class="mt-2 leading-relaxed text-slate-600"
+              data-i18n={`${prefix}.maintenance.desc`}
+            >
+              {data.maintenance.desc}
+            </p>
+            <ul class="mt-5 grid gap-3 sm:grid-cols-2">
+              {
+                data.maintenance.features.map((feat: string, i: number) => (
+                  <li class="flex items-start gap-2.5 text-sm text-slate-700">
+                    <Icon
+                      name="checkCircle"
+                      class={`mt-0.5 h-5 w-5 shrink-0 ${
+                        accent === "leaf" ? "text-leaf-600" : "text-ocean-600"
+                      }`}
+                    />
+                    <span data-i18n={`${prefix}.maintenance.features.${i}`}>
+                      {feat}
+                    </span>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <CTAButton href="#contatti" variant={a.cta} size="lg">
+            <span data-i18n={`${prefix}.cta`}>{data.cta}</span>
+            <Icon name="arrowRight" class="h-5 w-5" />
+          </CTAButton>
+        </div>
+      </div>
+
+      <!-- Image column -->
+      <div class={imgCol} data-reveal data-reveal-delay="2">
+        <div class={`relative overflow-hidden rounded-3xl ring-1 ${a.ring} shadow-xl`}>
+          <img
+            src={image}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            width="720"
+            height="560"
+            class="h-full w-full object-cover"
+          />
+          <div
+            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ocean-950/30 to-transparent"
+          >
+          </div>
+          <div
+            class="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-ocean-800 shadow-lg"
+          >
+            <Icon name="sparkles" class="h-4 w-4 text-leaf-500" />
+            <span class="hidden sm:inline" data-i18n="common.freeQuote">Free quote</span>
+            <span data-i18n={`${prefix}.eyebrow`}>{data.eyebrow}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+---
+/**
+ * Call-to-action button. Use `variant` to switch styles and `href` for a link
+ * (renders an <a>), otherwise a <button>.
+ */
+interface Props {
+  href?: string;
+  variant?: "primary" | "secondary" | "ghost" | "white";
+  size?: "md" | "lg";
+  class?: string;
+  type?: "button" | "submit";
+  [key: string]: any;
+}
+const {
+  href,
+  variant = "primary",
+  size = "md",
+  class: className = "",
+  type = "button",
+  ...rest
+} = Astro.props;
+
+const base =
+  "inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 focus-visible:outline-none disabled:opacity-60 disabled:pointer-events-none";
+
+const sizes = {
+  md: "px-5 py-2.5 text-sm",
+  lg: "px-7 py-3.5 text-base",
+};
+
+const variants = {
+  primary:
+    "bg-ocean-600 text-white shadow-lg shadow-ocean-600/20 hover:bg-ocean-700 hover:-translate-y-0.5",
+  secondary:
+    "bg-leaf-500 text-white shadow-lg shadow-leaf-500/20 hover:bg-leaf-600 hover:-translate-y-0.5",
+  white:
+    "bg-white text-ocean-700 shadow-lg shadow-ocean-950/10 hover:bg-ocean-50 hover:-translate-y-0.5",
+  ghost:
+    "border border-ocean-200 bg-white/60 text-ocean-700 hover:bg-ocean-50 hover:border-ocean-300",
+};
+
+const cls = `${base} ${sizes[size]} ${variants[variant]} ${className}`;
+const Tag = href ? "a" : "button";
+const attrs: Record<string, any> = href ? { href } : { type };
+---
+
+<Tag class={cls} {...attrs} {...rest}>
+  <slot />
+</Tag>

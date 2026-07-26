@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Pool & Garden — Design Tokens (Tailwind v4 CSS-based config)
+   Palette inspired by water (ocean/teal) and greenery (leaf).
+   ============================================================ */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui,
+    sans-serif;
+
+  /* Ocean — primary (water / teal-blue) */
+  --color-ocean-50: #eefbfd;
+  --color-ocean-100: #d4f2f6;
+  --color-ocean-200: #ace4ec;
+  --color-ocean-300: #74cedb;
+  --color-ocean-400: #3ab1c4;
+  --color-ocean-500: #1893aa;
+  --color-ocean-600: #127591;
+  --color-ocean-700: #115e78;
+  --color-ocean-800: #134e64;
+  --color-ocean-900: #144055;
+  --color-ocean-950: #062836;
+
+  /* Leaf — secondary (greenery) */
+  --color-leaf-50: #f0f9ec;
+  --color-leaf-100: #dcefd2;
+  --color-leaf-200: #bce0ad;
+  --color-leaf-300: #93cb80;
+  --color-leaf-400: #6cb35a;
+  --color-leaf-500: #4a9836;
+  --color-leaf-600: #387a29;
+  --color-leaf-700: #2d6024;
+  --color-leaf-800: #274d21;
+  --color-leaf-900: #21401d;
+  --color-leaf-950: #0e220c;
+
+  /* Sand — warm neutral accent */
+  --color-sand-50: #faf8f3;
+  --color-sand-100: #f3eee2;
+  --color-sand-200: #e7dcc4;
+}
+
+/* ============================================================
+   Base styles
+   ============================================================ */
+html {
+  scroll-behavior: smooth;
+  /* offset for the sticky header when jumping to anchors */
+  scroll-padding-top: 6rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-slate-700);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-display);
+  color: var(--color-ocean-950);
+  letter-spacing: -0.02em;
+}
+
+/* Accessible focus styles */
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 3px solid var(--color-ocean-400);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip-to-content link for keyboard users */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  background: var(--color-ocean-700);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ============================================================
+   Scroll-reveal micro-interactions (no library, IntersectionObserver)
+   Elements with [data-reveal] fade/slide in when visible.
+   ============================================================ */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+[data-reveal-delay="1"] {
+  transition-delay: 0.1s;
+}
+[data-reveal-delay="2"] {
+  transition-delay: 0.2s;
+}
+[data-reveal-delay="3"] {
+  transition-delay: 0.3s;
+}
+[data-reveal-delay="4"] {
+  transition-delay: 0.4s;
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Utility: subtle gradient text */
+.text-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--color-ocean-600),
+    var(--color-leaf-500)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Decorative wave divider helper */
+.wave-divider {
+  line-height: 0;
+  display: block;
+}
+
+/* Language switcher active state */
+.lang-btn[aria-pressed="true"] {
+  background: var(--color-ocean-600);
+  color: #fff;
+}
+
+/* Service tab active state */
+.tab-btn[aria-selected="true"] {
+  background: var(--color-ocean-600);
+  color: #fff;
+  border-color: var(--color-ocean-600);
+}

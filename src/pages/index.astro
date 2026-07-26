@@ -1,11 +1,55 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Header from "../sections/Header.astro";
+import Hero from "../sections/Hero.astro";
+import ServicesOverview from "../sections/ServicesOverview.astro";
+import ServiceBlock from "../sections/ServiceBlock.astro";
+import About from "../sections/About.astro";
+import Gallery from "../sections/Gallery.astro";
+import Testimonials from "../sections/Testimonials.astro";
+import Contact from "../sections/Contact.astro";
+import Newsletter from "../sections/Newsletter.astro";
+import Footer from "../sections/Footer.astro";
+import CookieConsent from "../sections/CookieConsent.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <Header />
+  <main id="main">
+    <Hero />
+    <ServicesOverview />
+
+    <ServiceBlock
+      id="piscine"
+      prefix="piscine"
+      icon="pool"
+      accent="ocean"
+      image="/images/placeholders/pool-1.svg"
+    />
+    <div class="bg-sand-50">
+      <ServiceBlock
+        id="irrigazione"
+        prefix="irrigazione"
+        icon="droplet"
+        accent="ocean"
+        image="/images/placeholders/irrigation-1.svg"
+        reverse
+      />
+    </div>
+    <ServiceBlock
+      id="prati"
+      prefix="prati"
+      icon="leaf"
+      accent="leaf"
+      image="/images/placeholders/lawn-1.svg"
+    />
+
+    <About />
+    <Gallery />
+    <Testimonials />
+    <Contact />
+    <Newsletter />
+  </main>
+  <Footer />
+  <CookieConsent />
 </Layout>

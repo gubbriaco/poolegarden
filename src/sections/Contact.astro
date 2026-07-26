@@ -1,0 +1,284 @@
+---
+import { translations } from "../i18n/translations";
+import { site } from "../data/site";
+import SectionHeading from "../components/SectionHeading.astro";
+import Icon from "../components/Icon.astro";
+
+const t = translations.it as any;
+
+const info = [
+  {
+    icon: "phone",
+    labelKey: "contact.phoneLabel",
+    label: t.contact.phoneLabel,
+    value: site.phone,
+    href: `tel:${site.phoneHref}`,
+  },
+  {
+    icon: "mail",
+    labelKey: "contact.emailLabel",
+    label: t.contact.emailLabel,
+    value: site.email,
+    href: `mailto:${site.email}`,
+  },
+  {
+    icon: "whatsapp",
+    labelKey: "contact.whatsappLabel",
+    label: t.contact.whatsappLabel,
+    value: `+${site.whatsapp}`,
+    href: `https://wa.me/${site.whatsapp}`,
+    external: true,
+  },
+  {
+    icon: "mapPin",
+    labelKey: "contact.addressLabel",
+    label: t.contact.addressLabel,
+    value: `${site.address.street}, ${site.address.city}`,
+  },
+  {
+    icon: "clock",
+    labelKey: "contact.hoursLabel",
+    label: t.contact.hoursLabel,
+    valueKey: "contact.hoursValue",
+    value: t.contact.hoursValue,
+  },
+];
+
+const socials = [
+  { icon: "facebook", href: site.social.facebook, label: "Facebook" },
+  { icon: "instagram", href: site.social.instagram, label: "Instagram" },
+  { icon: "linkedin", href: site.social.linkedin, label: "LinkedIn" },
+];
+
+const map = site.map;
+const bbox = `${map.lng - map.delta},${map.lat - map.delta},${map.lng + map.delta},${map.lat + map.delta}`;
+const mapSrc = `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${map.lat},${map.lng}`;
+const mapLink = `https://www.openstreetmap.org/?mlat=${map.lat}&mlon=${map.lng}#map=15/${map.lat}/${map.lng}`;
+---
+
+<section id="contatti" class="scroll-mt-24 bg-white py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <SectionHeading
+      eyebrowKey="contact.eyebrow"
+      titleKey="contact.title"
+      subtitleKey="contact.subtitle"
+      data-reveal
+    />
+
+    <div class="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-14">
+      <!-- Left: info + map -->
+      <div class="space-y-8" data-reveal>
+        <ul class="space-y-4">
+          {
+            info.map((c) => {
+              const content = (
+                <>
+                  <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-ocean-50 text-ocean-600">
+                    <Icon name={c.icon} class="h-5 w-5" />
+                  </span>
+                  <span class="min-w-0">
+                    <span
+                      class="block text-xs font-semibold uppercase tracking-wide text-slate-400"
+                      data-i18n={c.labelKey}
+                    >
+                      {c.label}
+                    </span>
+                    <span class="block break-words font-semibold text-ocean-950">
+                      {c.valueKey ? (
+                        <span data-i18n={c.valueKey}>{c.value}</span>
+                      ) : (
+                        c.value
+                      )}
+                    </span>
+                  </span>
+                </>
+              );
+              return (
+                <li>
+                  {c.href ? (
+                    <a
+                      href={c.href}
+                      {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                      class="flex items-center gap-4 rounded-2xl border border-slate-100 p-3 transition hover:border-ocean-200 hover:bg-ocean-50/50"
+                    >
+                      {content}
+                    </a>
+                  ) : (
+                    <div class="flex items-center gap-4 rounded-2xl border border-slate-100 p-3">
+                      {content}
+                    </div>
+                  )}
+                </li>
+              );
+            })
+          }
+        </ul>
+
+        <!-- Socials -->
+        <div>
+          <span class="block text-xs font-semibold uppercase tracking-wide text-slate-400">
+            {t.footer.followTitle}
+          </span>
+          <div class="mt-3 flex gap-3" data-i18n-attr="aria-label:footer.followTitle">
+            {
+              socials.map((s) => (
+                <a
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-ocean-700 transition hover:-translate-y-0.5 hover:border-ocean-300 hover:bg-ocean-600 hover:text-white"
+                >
+                  <Icon name={s.icon} class="h-5 w-5" />
+                </a>
+              ))
+            }
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="overflow-hidden rounded-3xl border border-slate-200 shadow-sm">
+          <iframe
+            title={t.contact.mapTitle}
+            src={mapSrc}
+            class="h-64 w-full"
+            style="border:0"
+            loading="lazy"
+            data-i18n-attr="title:contact.mapTitle"
+          ></iframe>
+          <div class="flex items-center justify-between gap-2 bg-sand-50 px-4 py-3 text-sm">
+            <span class="font-medium text-slate-600">
+              {site.legalName} — {site.address.street}, {site.address.city}
+            </span>
+            <a
+              href={mapLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-semibold text-ocean-600 hover:underline"
+              data-i18n="common.readMore"
+            >
+              {t.common.readMore}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div data-reveal data-reveal-delay="2">
+        <form
+          action={site.forms.contact}
+          method="POST"
+          data-ajax-form
+          data-success={t.contact.form.success}
+          data-error={t.contact.form.error}
+          class="rounded-3xl border border-slate-100 bg-sand-50 p-6 shadow-sm sm:p-8"
+        >
+          <h3 class="text-xl font-bold text-ocean-950" data-i18n="contact.form.title">
+            {t.contact.form.title}
+          </h3>
+
+          <div class="mt-5 grid gap-4 sm:grid-cols-2">
+            <div class="sm:col-span-2">
+              <label for="cf-name" class="block text-sm font-semibold text-ocean-950" data-i18n="contact.form.name">
+                {t.contact.form.name}
+              </label>
+              <input
+                id="cf-name"
+                name="name"
+                type="text"
+                required
+                autocomplete="name"
+                class="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition focus:border-ocean-400 focus:ring-2 focus:ring-ocean-200"
+                data-i18n-attr="placeholder:contact.form.namePh"
+                placeholder={t.contact.form.namePh}
+              />
+            </div>
+            <div>
+              <label for="cf-email" class="block text-sm font-semibold text-ocean-950" data-i18n="contact.form.email">
+                {t.contact.form.email}
+              </label>
+              <input
+                id="cf-email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                class="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition focus:border-ocean-400 focus:ring-2 focus:ring-ocean-200"
+                data-i18n-attr="placeholder:contact.form.emailPh"
+                placeholder={t.contact.form.emailPh}
+              />
+            </div>
+            <div>
+              <label for="cf-phone" class="block text-sm font-semibold text-ocean-950" data-i18n="contact.form.phone">
+                {t.contact.form.phone}
+              </label>
+              <input
+                id="cf-phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                class="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition focus:border-ocean-400 focus:ring-2 focus:ring-ocean-200"
+                data-i18n-attr="placeholder:contact.form.phonePh"
+                placeholder={t.contact.form.phonePh}
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="cf-service" class="block text-sm font-semibold text-ocean-950" data-i18n="contact.form.service">
+                {t.contact.form.service}
+              </label>
+              <select
+                id="cf-service"
+                name="service"
+                class="mt-1.5 w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition focus:border-ocean-400 focus:ring-2 focus:ring-ocean-200"
+              >
+                <option value="" data-i18n="contact.form.serviceDefault">{t.contact.form.serviceDefault}</option>
+                {
+                  t.contact.form.serviceOptions.map((opt: string, i: number) => (
+                    <option value={opt} data-i18n={`contact.form.serviceOptions.${i}`}>
+                      {opt}
+                    </option>
+                  ))
+                }
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="cf-message" class="block text-sm font-semibold text-ocean-950" data-i18n="contact.form.message">
+                {t.contact.form.message}
+              </label>
+              <textarea
+                id="cf-message"
+                name="message"
+                rows="4"
+                required
+                class="mt-1.5 w-full resize-y rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm outline-none transition focus:border-ocean-400 focus:ring-2 focus:ring-ocean-200"
+                data-i18n-attr="placeholder:contact.form.messagePh"
+                placeholder={t.contact.form.messagePh}
+              ></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="flex items-start gap-2.5 text-xs leading-relaxed text-slate-600">
+                <input
+                  type="checkbox"
+                  name="consent"
+                  required
+                  class="mt-0.5 h-4 w-4 rounded border-slate-300 text-ocean-600 focus:ring-ocean-400"
+                />
+                <span data-i18n="contact.form.consent">{t.contact.form.consent}</span>
+              </label>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-ocean-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-ocean-600/20 transition hover:-translate-y-0.5 hover:bg-ocean-700"
+          >
+            <span data-i18n="contact.form.submit">{t.contact.form.submit}</span>
+            <Icon name="arrowRight" class="h-5 w-5" />
+          </button>
+
+          <p data-form-status class="mt-4 hidden text-center text-sm font-medium" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
