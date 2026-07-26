@@ -11,6 +11,7 @@ import Contact from "../sections/Contact.astro";
 import Newsletter from "../sections/Newsletter.astro";
 import Footer from "../sections/Footer.astro";
 import CookieConsent from "../sections/CookieConsent.astro";
+import { images } from "../data/images";
 ---
 
 <Layout>
@@ -24,7 +25,7 @@ import CookieConsent from "../sections/CookieConsent.astro";
       prefix="piscine"
       icon="pool"
       accent="ocean"
-      image="/images/placeholders/pool-1.svg"
+      image={images.piscine}
     />
     <div class="bg-sand-50">
       <ServiceBlock
@@ -32,7 +33,7 @@ import CookieConsent from "../sections/CookieConsent.astro";
         prefix="irrigazione"
         icon="droplet"
         accent="ocean"
-        image="/images/placeholders/irrigation-1.svg"
+        image={images.irrigazione}
         reverse
       />
     </div>
@@ -41,7 +42,7 @@ import CookieConsent from "../sections/CookieConsent.astro";
       prefix="prati"
       icon="leaf"
       accent="leaf"
-      image="/images/placeholders/lawn-1.svg"
+      image={images.prati}
     />
 
     <About />

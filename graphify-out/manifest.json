@@ -10,13 +10,13 @@
     "semantic_hash": "e1c4c2bce78272957671d370aa70d563"
   },
   "src/layouts/Layout.astro": {
-    "mtime": 1785090139.3547032,
-    "ast_hash": "2f4da6a0bbc2da55a9be77703b2960ba",
+    "mtime": 1785092050.6673257,
+    "ast_hash": "7224939882bf5f8f75d08c54a2f0138c",
     "semantic_hash": ""
   },
   "src/pages/index.astro": {
-    "mtime": 1785089785.1717253,
-    "ast_hash": "749dd1e55c0a1923b6842395d41363e0",
+    "mtime": 1785092028.2765603,
+    "ast_hash": "5b5125bc61a2ba07ddc2b74c992e0432",
     "semantic_hash": ""
   },
   "tsconfig.json": {
@@ -35,8 +35,8 @@
     "semantic_hash": "d1f08c8c021ac8778c1611c2c529d92c"
   },
   "README.md": {
-    "mtime": 1785090236.6681995,
-    "ast_hash": "daa3e3913dc58e532b95ca2a011e9a4a",
+    "mtime": 1785092135.7850966,
+    "ast_hash": "b78dd0a23c56719306cd1edb07a17fd7",
     "semantic_hash": ""
   },
   "public/favicon.svg": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "public/js/main.js": {
-    "mtime": 1785089428.170304,
-    "ast_hash": "f3753409c1dedc883b2cb767b5aafc9e",
+    "mtime": 1785091954.4338913,
+    "ast_hash": "5ab54017a365fa3f96e8e60be64b5744",
     "semantic_hash": ""
   },
   "src/components/CTAButton.astro": {
@@ -75,8 +75,8 @@
     "semantic_hash": ""
   },
   "src/data/site.ts": {
-    "mtime": 1785089386.8708732,
-    "ast_hash": "288cc8ce7441f8b32145e99464307499",
+    "mtime": 1785091843.101099,
+    "ast_hash": "0db503b4046680f975aacb4f4c9d3510",
     "semantic_hash": ""
   },
   "src/i18n/en.json": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "src/sections/About.astro": {
-    "mtime": 1785089648.1473608,
-    "ast_hash": "e091f1525b83a57735ff2034a8d2dedd",
+    "mtime": 1785091996.7981815,
+    "ast_hash": "bfbad937180697fc15385d08115992ff",
     "semantic_hash": ""
   },
   "src/sections/Contact.astro": {
@@ -140,18 +140,18 @@
     "semantic_hash": ""
   },
   "src/sections/Gallery.astro": {
-    "mtime": 1785089803.1547809,
-    "ast_hash": "8454181b585a87e36dc5b5951b8673d9",
+    "mtime": 1785092019.5063403,
+    "ast_hash": "6aecf385e7dd1da1a3ae396deb5abc90",
     "semantic_hash": ""
   },
   "src/sections/Header.astro": {
-    "mtime": 1785090144.3340843,
-    "ast_hash": "6c4b82880db36d5aafae00875593c937",
+    "mtime": 1785091880.3567152,
+    "ast_hash": "d9f0881a2a8b7c55bc01a4afb10fa47d",
     "semantic_hash": ""
   },
   "src/sections/Hero.astro": {
-    "mtime": 1785090061.2725022,
-    "ast_hash": "6a1c0c326c587b03bc9bab43935912c1",
+    "mtime": 1785091914.2813683,
+    "ast_hash": "2c6899f18a2265a2905abf2da5b9e946",
     "semantic_hash": ""
   },
   "src/sections/Newsletter.astro": {
@@ -160,8 +160,8 @@
     "semantic_hash": ""
   },
   "src/sections/ServiceBlock.astro": {
-    "mtime": 1785089550.416355,
-    "ast_hash": "42e91e138336dbc245560c2ab508f8fa",
+    "mtime": 1785091967.7204278,
+    "ast_hash": "da3036ba931c8ac63ce7b7cc51301991",
     "semantic_hash": ""
   },
   "src/sections/ServicesOverview.astro": {
@@ -184,44 +184,14 @@
     "ast_hash": "4555d348dde506e80b023cdbb9106395",
     "semantic_hash": ""
   },
-  "public/images/placeholders/garden-1.svg": {
-    "mtime": 1785089961.7966406,
-    "ast_hash": "2038dfbd851bb6be6a92a57209580ab0",
-    "semantic_hash": ""
-  },
-  "public/images/placeholders/hero.svg": {
-    "mtime": 1785089903.0094967,
-    "ast_hash": "8d3ff97f293a7e97c355784fc8931c8b",
-    "semantic_hash": ""
-  },
-  "public/images/placeholders/irrigation-1.svg": {
-    "mtime": 1785089932.83457,
-    "ast_hash": "16a5ddba95a7acf9508f97cbba570bfd",
-    "semantic_hash": ""
-  },
-  "public/images/placeholders/lawn-1.svg": {
-    "mtime": 1785089942.4135933,
-    "ast_hash": "789491ce9103aa58c161ceb122e3c402",
-    "semantic_hash": ""
-  },
-  "public/images/placeholders/lawn-2.svg": {
-    "mtime": 1785089950.4236128,
-    "ast_hash": "9800c841380508d0c878181b14294483",
-    "semantic_hash": ""
-  },
-  "public/images/placeholders/pool-1.svg": {
-    "mtime": 1785089912.2265193,
-    "ast_hash": "eba195c9b590e84515d488b8ceecd790",
-    "semantic_hash": ""
-  },
-  "public/images/placeholders/pool-2.svg": {
-    "mtime": 1785089921.3455417,
-    "ast_hash": "5cf86ea33a40bd4329744334110cb938",
-    "semantic_hash": ""
-  },
   "src/assets/logo.png": {
     "mtime": 1785088161.6422477,
     "ast_hash": "2821fa59a72a6db3d6d8e10ab377434c",
+    "semantic_hash": ""
+  },
+  "src/data/images.ts": {
+    "mtime": 1785091834.855305,
+    "ast_hash": "d868e6e67da3067b56bdfddf3d1cbf79",
     "semantic_hash": ""
   }
 }

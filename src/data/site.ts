@@ -61,12 +61,4 @@ export const serviceLinks: { id: string; key: string }[] = [
 export const services = ["piscine", "irrigazione", "prati"] as const;
 export type ServiceId = (typeof services)[number];
 
-/** Ordered list of gallery placeholder images (files in /public/images/placeholders). */
-export const galleryImages: string[] = [
-  "/images/placeholders/pool-1.svg",
-  "/images/placeholders/irrigation-1.svg",
-  "/images/placeholders/lawn-1.svg",
-  "/images/placeholders/pool-2.svg",
-  "/images/placeholders/garden-1.svg",
-  "/images/placeholders/lawn-2.svg",
-];
+/** Placeholder imagery lives in `src/data/images.ts`. */

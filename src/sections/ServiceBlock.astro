@@ -185,18 +185,17 @@ const textCol = reverse ? "lg:order-1" : "";
 
       <!-- Image column -->
       <div class={imgCol} data-reveal data-reveal-delay="2">
-        <div class={`relative overflow-hidden rounded-3xl ring-1 ${a.ring} shadow-xl`}>
+        <div class={`relative aspect-[4/3] overflow-hidden rounded-3xl ring-1 ${a.ring} shadow-xl`}>
           <img
             src={image}
-            alt=""
+            alt={data.title}
             loading="lazy"
             decoding="async"
-            width="720"
-            height="560"
-            class="h-full w-full object-cover"
+            referrerpolicy="no-referrer"
+            class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
           />
           <div
-            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ocean-950/30 to-transparent"
+            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ocean-950/45 via-ocean-950/5 to-transparent"
           >
           </div>
           <div

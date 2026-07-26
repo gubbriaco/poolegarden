@@ -3,6 +3,7 @@ import "../styles/global.css";
 import logo from "../assets/logo.png";
 import { translations, defaultLang } from "../i18n/translations";
 import { site } from "../data/site";
+import { images } from "../data/images";
 
 export interface Props {
   title?: string;
@@ -15,7 +16,7 @@ const {
   title = translations.it.meta.title,
   description = translations.it.meta.description,
   canonical,
-  ogImage = "/images/placeholders/hero.svg",
+  ogImage = images.heroPool,
 } = Astro.props;
 
 const canonicalURL = canonical ?? new URL(Astro.url.pathname, site.domain).toString();

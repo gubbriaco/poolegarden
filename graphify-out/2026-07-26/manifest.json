@@ -9,20 +9,15 @@
     "ast_hash": "e1c4c2bce78272957671d370aa70d563",
     "semantic_hash": "e1c4c2bce78272957671d370aa70d563"
   },
-  "src/components/Welcome.astro": {
-    "mtime": 1784569530.0,
-    "ast_hash": "7274ef144fc0554f96f977626b0b96d4",
-    "semantic_hash": "7274ef144fc0554f96f977626b0b96d4"
-  },
   "src/layouts/Layout.astro": {
-    "mtime": 1784569530.0,
-    "ast_hash": "a5d0cd59738ae67fbc9a91d424c73045",
-    "semantic_hash": "a5d0cd59738ae67fbc9a91d424c73045"
+    "mtime": 1785090139.3547032,
+    "ast_hash": "2f4da6a0bbc2da55a9be77703b2960ba",
+    "semantic_hash": ""
   },
   "src/pages/index.astro": {
-    "mtime": 1784569530.0,
-    "ast_hash": "ca7d752d7ba470cbc1c0fb25b2cb1396",
-    "semantic_hash": "ca7d752d7ba470cbc1c0fb25b2cb1396"
+    "mtime": 1785089785.1717253,
+    "ast_hash": "749dd1e55c0a1923b6842395d41363e0",
+    "semantic_hash": ""
   },
   "tsconfig.json": {
     "mtime": 1784569530.0,
@@ -40,18 +35,193 @@
     "semantic_hash": "d1f08c8c021ac8778c1611c2c529d92c"
   },
   "README.md": {
-    "mtime": 1785086060.2617142,
-    "ast_hash": "de76967202948d4f70d11f4b3d9e7674",
-    "semantic_hash": "de76967202948d4f70d11f4b3d9e7674"
+    "mtime": 1785090236.6681995,
+    "ast_hash": "daa3e3913dc58e532b95ca2a011e9a4a",
+    "semantic_hash": ""
   },
   "public/favicon.svg": {
     "mtime": 1784569530.0,
     "ast_hash": "8c13f40658976ea1dfb8ba37a8be0e8d",
     "semantic_hash": "8c13f40658976ea1dfb8ba37a8be0e8d"
   },
-  "src/assets/astro.svg": {
-    "mtime": 1784569530.0,
-    "ast_hash": "d26c3520f1f016bad745392df8b5fae5",
-    "semantic_hash": "d26c3520f1f016bad745392df8b5fae5"
+  "public/js/i18n.js": {
+    "mtime": 1785089400.2509592,
+    "ast_hash": "13222ad37d031dd9475ddcce8ba8cce5",
+    "semantic_hash": ""
+  },
+  "public/js/main.js": {
+    "mtime": 1785089428.170304,
+    "ast_hash": "f3753409c1dedc883b2cb767b5aafc9e",
+    "semantic_hash": ""
+  },
+  "src/components/CTAButton.astro": {
+    "mtime": 1785089510.5985162,
+    "ast_hash": "f08724d4e7262fec57aa9f73c738226e",
+    "semantic_hash": ""
+  },
+  "src/components/Icon.astro": {
+    "mtime": 1785090055.080868,
+    "ast_hash": "5c379cbb3f6e090bd2bd4b06a46cad58",
+    "semantic_hash": ""
+  },
+  "src/components/LanguageSwitcher.astro": {
+    "mtime": 1785089493.8275938,
+    "ast_hash": "81ad6d102baa4bdd1743ea938ec48b58",
+    "semantic_hash": ""
+  },
+  "src/components/SectionHeading.astro": {
+    "mtime": 1785089519.4245389,
+    "ast_hash": "c9fad8a7201f7c6e2792cc72c65d2304",
+    "semantic_hash": ""
+  },
+  "src/data/site.ts": {
+    "mtime": 1785089386.8708732,
+    "ast_hash": "288cc8ce7441f8b32145e99464307499",
+    "semantic_hash": ""
+  },
+  "src/i18n/en.json": {
+    "mtime": 1785089363.1375933,
+    "ast_hash": "80dea75013f1f3421d00f7abcc872a37",
+    "semantic_hash": ""
+  },
+  "src/i18n/it.json": {
+    "mtime": 1785089321.2486424,
+    "ast_hash": "7e778b662c8180023298746847b87720",
+    "semantic_hash": ""
+  },
+  "src/i18n/translations.ts": {
+    "mtime": 1785089372.802939,
+    "ast_hash": "6b6c4d602297e0f39fac4ef791361d60",
+    "semantic_hash": ""
+  },
+  "src/layouts/LegalPage.astro": {
+    "mtime": 1785089833.3473256,
+    "ast_hash": "dffb0ca7ee5dfbfdc742865c34286ae3",
+    "semantic_hash": ""
+  },
+  "src/pages/404.astro": {
+    "mtime": 1785089862.6893635,
+    "ast_hash": "36bc4ea782930fc9d28e24e35151bfe8",
+    "semantic_hash": ""
+  },
+  "src/pages/cookie-policy.astro": {
+    "mtime": 1785089849.1283643,
+    "ast_hash": "09fbceb0cfb2aae7b3396b5c29796055",
+    "semantic_hash": ""
+  },
+  "src/pages/privacy.astro": {
+    "mtime": 1785089844.3425088,
+    "ast_hash": "25cd9d61c1e074fe350d8a364efed652",
+    "semantic_hash": ""
+  },
+  "src/pages/terms.astro": {
+    "mtime": 1785089855.5996509,
+    "ast_hash": "c67950af3cd88fcfe43521260de49e5c",
+    "semantic_hash": ""
+  },
+  "src/sections/About.astro": {
+    "mtime": 1785089648.1473608,
+    "ast_hash": "e091f1525b83a57735ff2034a8d2dedd",
+    "semantic_hash": ""
+  },
+  "src/sections/Contact.astro": {
+    "mtime": 1785089698.985992,
+    "ast_hash": "22d49aa685dd26d8767d72b85d51f764",
+    "semantic_hash": ""
+  },
+  "src/sections/CookieConsent.astro": {
+    "mtime": 1785089752.8997245,
+    "ast_hash": "e4a4e9568d310aa447b42ca2db5a7a11",
+    "semantic_hash": ""
+  },
+  "src/sections/Footer.astro": {
+    "mtime": 1785090152.28037,
+    "ast_hash": "427269a926f8608a9b5806755b1f3c1a",
+    "semantic_hash": ""
+  },
+  "src/sections/Gallery.astro": {
+    "mtime": 1785089803.1547809,
+    "ast_hash": "8454181b585a87e36dc5b5951b8673d9",
+    "semantic_hash": ""
+  },
+  "src/sections/Header.astro": {
+    "mtime": 1785090144.3340843,
+    "ast_hash": "6c4b82880db36d5aafae00875593c937",
+    "semantic_hash": ""
+  },
+  "src/sections/Hero.astro": {
+    "mtime": 1785090061.2725022,
+    "ast_hash": "6a1c0c326c587b03bc9bab43935912c1",
+    "semantic_hash": ""
+  },
+  "src/sections/Newsletter.astro": {
+    "mtime": 1785089711.2427747,
+    "ast_hash": "ae3fbc4d47397d65e9ca156f0379fca4",
+    "semantic_hash": ""
+  },
+  "src/sections/ServiceBlock.astro": {
+    "mtime": 1785089550.416355,
+    "ast_hash": "42e91e138336dbc245560c2ab508f8fa",
+    "semantic_hash": ""
+  },
+  "src/sections/ServicesOverview.astro": {
+    "mtime": 1785089623.3418024,
+    "ast_hash": "b2b2336d4b796711f8d63d5c58c1d12e",
+    "semantic_hash": ""
+  },
+  "src/sections/Testimonials.astro": {
+    "mtime": 1785089814.0722778,
+    "ast_hash": "ddc33ba8bdee89f81393dfc81006afa4",
+    "semantic_hash": ""
+  },
+  "prompt.md": {
+    "mtime": 1785088840.6016638,
+    "ast_hash": "bd46a77f74a75da71b8f26b04b0a7226",
+    "semantic_hash": ""
+  },
+  "public/robots.txt": {
+    "mtime": 1785089879.6804395,
+    "ast_hash": "4555d348dde506e80b023cdbb9106395",
+    "semantic_hash": ""
+  },
+  "public/images/placeholders/garden-1.svg": {
+    "mtime": 1785089961.7966406,
+    "ast_hash": "2038dfbd851bb6be6a92a57209580ab0",
+    "semantic_hash": ""
+  },
+  "public/images/placeholders/hero.svg": {
+    "mtime": 1785089903.0094967,
+    "ast_hash": "8d3ff97f293a7e97c355784fc8931c8b",
+    "semantic_hash": ""
+  },
+  "public/images/placeholders/irrigation-1.svg": {
+    "mtime": 1785089932.83457,
+    "ast_hash": "16a5ddba95a7acf9508f97cbba570bfd",
+    "semantic_hash": ""
+  },
+  "public/images/placeholders/lawn-1.svg": {
+    "mtime": 1785089942.4135933,
+    "ast_hash": "789491ce9103aa58c161ceb122e3c402",
+    "semantic_hash": ""
+  },
+  "public/images/placeholders/lawn-2.svg": {
+    "mtime": 1785089950.4236128,
+    "ast_hash": "9800c841380508d0c878181b14294483",
+    "semantic_hash": ""
+  },
+  "public/images/placeholders/pool-1.svg": {
+    "mtime": 1785089912.2265193,
+    "ast_hash": "eba195c9b590e84515d488b8ceecd790",
+    "semantic_hash": ""
+  },
+  "public/images/placeholders/pool-2.svg": {
+    "mtime": 1785089921.3455417,
+    "ast_hash": "5cf86ea33a40bd4329744334110cb938",
+    "semantic_hash": ""
+  },
+  "src/assets/logo.png": {
+    "mtime": 1785088161.6422477,
+    "ast_hash": "2821fa59a72a6db3d6d8e10ab377434c",
+    "semantic_hash": ""
   }
 }

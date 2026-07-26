@@ -51,8 +51,7 @@ poolegarden/
 ├── public/
 │   ├── js/
 │   │   ├── i18n.js             # IT/EN language switcher (no reload)
-│   │   └── main.js             # reveal, mobile menu, tabs, lightbox, cookie, forms
-│   ├── images/placeholders/    # placeholder SVGs (hero + gallery/services)
+│   │   └── main.js             # reveal, count-up, mobile menu, tabs, lightbox, cookie, forms
 │   ├── robots.txt
 │   └── sitemap.xml
 └── src/
@@ -89,7 +88,8 @@ poolegarden/
     │   ├── en.json             # English dictionary
     │   └── translations.ts     # typed loader + default language
     ├── data/
-    │   └── site.ts             # company info, contacts, socials, map, forms
+    │   ├── site.ts             # company info, contacts, socials, map, forms
+    │   └── images.ts           # placeholder photography (Unsplash) — hero/services/gallery
     └── styles/
         └── global.css          # Tailwind import + design tokens (@theme)
 ```
@@ -153,7 +153,7 @@ The dotted path supports nested objects **and arrays**, e.g.
 2. **Render** it on the homepage (`src/pages/index.astro`):
    ```astro
    <ServiceBlock id="illuminazione" prefix="illuminazione" icon="sparkles"
-     accent="ocean" image="/images/placeholders/your-image.svg" />
+     accent="ocean" image={images.piscine} />
    ```
 3. **Icon**: add a new entry to the `icons` map in `src/components/Icon.astro`.
 4. **Nav / quick links**: add the anchor to `navLinks` / `serviceLinks` in
@@ -197,10 +197,12 @@ cookie banner.
 
 ### Replace placeholder images
 
-Swap the files in `public/images/placeholders/` with real photography
-(preferably optimised WebP with a fallback). The gallery list lives in
-`src/data/site.ts` (`galleryImages`) and captions in the i18n files
-(`gallery.captions`).
+Photography is centralised in **`src/data/images.ts`** — these are real,
+topical Unsplash images (verified to load) used as placeholders. Swap each URL
+(uploaded to `public/` as optimised WebP/JPEG, or a new Unsplash ID) and the
+hero, service sections, About image and gallery all update automatically.
+Gallery captions live in the i18n files (`gallery.captions`) and their order
+must match `images.gallery`.
 
 ---
 

@@ -1,14 +1,15 @@
 ---
 import { translations } from "../i18n/translations";
-import { galleryImages } from "../data/site";
+import { images } from "../data/images";
 import SectionHeading from "../components/SectionHeading.astro";
 import Icon from "../components/Icon.astro";
 
 const t = translations.it as any;
-const items = galleryImages.map((src, i) => ({
+const items = images.gallery.map((src, i) => ({
   src,
   captionKey: `gallery.captions.${i}`,
   caption: t.gallery.captions[i],
+  featured: i === 0,
 }));
 ---
 
@@ -21,7 +22,9 @@ const items = galleryImages.map((src, i) => ({
       data-reveal
     />
 
-    <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div
+      class="mt-14 grid auto-rows-[160px] grid-cols-1 gap-4 sm:auto-rows-[200px] sm:grid-cols-2 lg:grid-cols-3"
+    >
       {
         items.map((it, i) => (
           <button
@@ -30,7 +33,7 @@ const items = galleryImages.map((src, i) => ({
             data-full={it.src}
             data-alt={it.caption}
             class={`group relative block overflow-hidden rounded-2xl bg-ocean-100 shadow-sm ring-1 ring-slate-200 focus-visible:outline-none ${
-              i === 0 ? "sm:col-span-2 sm:row-span-2" : ""
+              it.featured ? "sm:col-span-2 sm:row-span-2" : ""
             }`}
             aria-label={it.caption}
             data-reveal
@@ -41,19 +44,18 @@ const items = galleryImages.map((src, i) => ({
               alt={it.caption}
               loading="lazy"
               decoding="async"
-              class={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${
-                i === 0 ? "h-64 sm:h-full" : "h-48"
-              }`}
+              referrerpolicy="no-referrer"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <span class="absolute inset-0 bg-gradient-to-t from-ocean-950/70 via-ocean-950/10 to-transparent" />
+            <span class="absolute inset-0 bg-gradient-to-t from-ocean-950/75 via-ocean-950/10 to-transparent" />
             <span class="absolute inset-x-0 bottom-0 flex items-center justify-between gap-2 p-4 text-left">
               <span
-                class="text-sm font-semibold text-white"
+                class={`text-sm font-semibold text-white ${it.featured ? "sm:text-base" : ""}`}
                 data-i18n={it.captionKey}
               >
                 {it.caption}
               </span>
-              <span class="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur">
+              <span class="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur transition group-hover:bg-white/30">
                 <Icon name="arrowRight" class="h-4 w-4 -rotate-45" />
               </span>
             </span>
@@ -61,9 +63,5 @@ const items = galleryImages.map((src, i) => ({
         ))
       }
     </div>
-
-    <p class="mt-8 text-center text-xs text-slate-400">
-      {t.gallery.subtitle}
-    </p>
   </div>
 </section>

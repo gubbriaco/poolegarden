@@ -41,6 +41,70 @@
     });
   });
 
+  /* ---------- Animated stat count-up ---------- */
+  ready(function () {
+    var nodes = document.querySelectorAll("[data-countup]");
+    if (!nodes.length) return;
+    var reduce = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    function parse(el) {
+      var raw = (el.getAttribute("data-countup-target") || el.textContent || "")
+        .trim();
+      var m = raw.match(/^([\d.]+)(.*)$/);
+      return m ? { target: parseFloat(m[1]), suffix: m[2] } : null;
+    }
+    function run(el) {
+      var p = parse(el);
+      if (!p) return;
+      if (reduce || !(p.target > 0)) {
+        el.textContent = p.target + p.suffix;
+        return;
+      }
+      var dur = 1600;
+      var start = null;
+      function step(ts) {
+        if (start === null) start = ts;
+        var prog = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - prog, 3); // easeOutCubic
+        el.textContent = Math.round(p.target * eased) + p.suffix;
+        if (prog < 1) requestAnimationFrame(step);
+        else el.textContent = p.target + p.suffix;
+      }
+      requestAnimationFrame(step);
+    }
+    if (!("IntersectionObserver" in window)) {
+      nodes.forEach(run);
+      return;
+    }
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            run(e.target);
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    nodes.forEach(function (n) {
+      io.observe(n);
+    });
+  });
+
+  /* ---------- Navbar depth on scroll ---------- */
+  ready(function () {
+    var nav = document.querySelector("[data-navbar]");
+    if (!nav) return;
+    var onScroll = function () {
+      nav.classList.toggle("is-scrolled", window.scrollY > 8);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  });
+
   /* ---------- Mobile navigation ---------- */
   ready(function () {
     var toggle = document.querySelector("[data-menu-toggle]");
