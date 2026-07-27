@@ -44,38 +44,43 @@
 
 /* ============================================================
    Base styles
+   Wrapped in @layer base so Tailwind utility classes
+   (e.g. text-white) can override them. Unlayered CSS would
+   otherwise win over Tailwind's layered utilities.
    ============================================================ */
-html {
-  scroll-behavior: smooth;
-  /* offset for the sticky header when jumping to anchors */
-  scroll-padding-top: 6rem;
-  -webkit-text-size-adjust: 100%;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* offset for the sticky header when jumping to anchors */
+    scroll-padding-top: 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
 
-body {
-  font-family: var(--font-sans);
-  color: var(--color-slate-700);
-  background-color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  overflow-x: hidden;
-}
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-slate-700);
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: var(--font-display);
-  color: var(--color-ocean-950);
-  letter-spacing: -0.02em;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-display);
+    color: var(--color-ocean-950);
+    letter-spacing: -0.02em;
+  }
 
-/* Accessible focus styles */
-:where(a, button, input, textarea, select, [tabindex]):focus-visible {
-  outline: 3px solid var(--color-ocean-400);
-  outline-offset: 2px;
-  border-radius: 4px;
+  /* Accessible focus styles */
+  :where(a, button, input, textarea, select, [tabindex]):focus-visible {
+    outline: 3px solid var(--color-ocean-400);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
 }
 
 /* Skip-to-content link for keyboard users */
