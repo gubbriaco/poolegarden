@@ -15,9 +15,9 @@
     "semantic_hash": "7224939882bf5f8f75d08c54a2f0138c"
   },
   "src/pages/index.astro": {
-    "mtime": 1785092028.2765603,
-    "ast_hash": "5b5125bc61a2ba07ddc2b74c992e0432",
-    "semantic_hash": "5b5125bc61a2ba07ddc2b74c992e0432"
+    "mtime": 1785178837.4162557,
+    "ast_hash": "a1d1d23c3ca40c9739974b92626d08ff",
+    "semantic_hash": ""
   },
   "tsconfig.json": {
     "mtime": 1784569530.0,
@@ -55,9 +55,9 @@
     "semantic_hash": ""
   },
   "src/components/CTAButton.astro": {
-    "mtime": 1785089510.5985162,
-    "ast_hash": "f08724d4e7262fec57aa9f73c738226e",
-    "semantic_hash": "f08724d4e7262fec57aa9f73c738226e"
+    "mtime": 1785178779.1114218,
+    "ast_hash": "e57c93feea13666ea00cd7ed8a853764",
+    "semantic_hash": ""
   },
   "src/components/Icon.astro": {
     "mtime": 1785090055.080868,
@@ -160,14 +160,14 @@
     "semantic_hash": ""
   },
   "src/sections/ServiceBlock.astro": {
-    "mtime": 1785091967.7204278,
-    "ast_hash": "da3036ba931c8ac63ce7b7cc51301991",
-    "semantic_hash": "da3036ba931c8ac63ce7b7cc51301991"
+    "mtime": 1785179076.2824945,
+    "ast_hash": "35532b6aee4eb6c29704a53fa6a0722a",
+    "semantic_hash": ""
   },
   "src/sections/ServicesOverview.astro": {
-    "mtime": 1785089623.3418024,
-    "ast_hash": "b2b2336d4b796711f8d63d5c58c1d12e",
-    "semantic_hash": "b2b2336d4b796711f8d63d5c58c1d12e"
+    "mtime": 1785178789.377438,
+    "ast_hash": "ab79cb83a08a7fe386de2baaaca94d37",
+    "semantic_hash": ""
   },
   "src/sections/Testimonials.astro": {
     "mtime": 1785089814.0722778,

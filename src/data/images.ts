@@ -1,13 +1,18 @@
-/**
- * PLACEHOLDER photography (Unsplash, free licence, no attribution required).
- *
- * These are real, topical images used so the site looks finished out-of-the-box.
- * Each URL was verified to resolve. Replace them with the client's real
- * project photography before launch — the rest of the code will pick up the
- * new URLs automatically.
- *
- * Builder: `U("<unsplash-id>", width, height?)` → optimised JPEG.
- */
+const assets = import.meta.glob('../assets/*', { 
+  eager: true,
+  query: '?url',
+  import: 'default'
+}) as Record<string, string>;
+
+const L = (filename: string): string => {
+  const path = `../assets/${filename}`;
+  if (!assets[path]) {
+    console.warn(`Immagine non trovata in src/assets: ${filename}`);
+    return "";
+  }
+  return assets[path];
+};
+
 
 const U = (id: string, w: number, h?: number): string =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}${
@@ -15,22 +20,40 @@ const U = (id: string, w: number, h?: number): string =>
   }&q=80`;
 
 export const images = {
-  /** Hero background — swimming pool. */
+  heroPool: L("hero.jpeg"),
+
+  piscine: L("piscine.jpeg"),
+  irrigazione: L("irrigazione.webp"),
+  prati: L("prati.jpg"),
+
+  about: L("about.jpeg"),
+
+  gallery: [
+    L("gallery-1.jpg"),
+    L("gallery-2.jpg"),
+    L("gallery-3.png"),
+    L("gallery-4.jpg"),
+    L("gallery-5.webp"),
+    L("gallery-6.jpg"),
+  ],
+} as const;
+
+
+/**
+const U = (id: string, w: number, h?: number): string =>
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}${
+    h ? `&h=${h}` : ""
+  }&q=80`;
+
+export const images = {
   heroPool: U("1540541338287-41700207dee6", 2000),
 
-  /** Detailed service section images. */
   piscine: U("1564594985645-4427056e22e2", 1100, 825),
   irrigazione: U("1416879595882-3373a0480b5b", 1100, 825),
   prati: U("1551522435-a13afa10f103", 1100, 825),
 
-  /** About section image. */
   about: U("1515263487990-61b07816b324", 1100, 900),
 
-  /**
-   * Gallery — order must match `gallery.captions` in src/i18n/{it,en}.json:
-   * [0] residential pool, [1] irrigation, [2] residential lawn,
-   * [3] infinity pool (featured), [4] green area, [5] sports field.
-   */
   gallery: [
     U("1571896349842-33c89424de2d", 900, 700),
     U("1416879595882-3373a0480b5b", 900, 700),
@@ -40,3 +63,4 @@ export const images = {
     U("1517649763962-0c623066013b", 900, 700),
   ],
 } as const;
+*/
