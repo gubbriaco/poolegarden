@@ -6,12 +6,14 @@ import Icon from "../components/Icon.astro";
 const t = translations.it as any;
 
 const cards = [
-  { id: "piscine", icon: "pool", accent: "ocean", to: "#piscine" },
+  { id: "piscine", icon: "pool", accent: "azure", to: "#piscine" },
   { id: "irrigazione", icon: "droplet", accent: "ocean", to: "#irrigazione" },
   { id: "prati", icon: "leaf", accent: "leaf", to: "#prati" },
 ] as const;
 
 const chipColor = {
+  azure:
+    "bg-azure-100 text-azure-700 group-hover:bg-azure-500 group-hover:text-white",
   ocean: "bg-ocean-100 text-ocean-700 group-hover:bg-ocean-600 group-hover:text-white",
   leaf: "bg-leaf-100 text-leaf-700 group-hover:bg-leaf-600 group-hover:text-white",
 };

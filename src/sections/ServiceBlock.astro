@@ -11,7 +11,7 @@ interface Props {
   id: string;
   prefix: string;
   icon: string;
-  accent?: "ocean" | "leaf";
+  accent?: "azure" | "ocean" | "leaf";
   image: string;
   reverse?: boolean;
 }
@@ -28,14 +28,22 @@ const t = translations.it as any;
 const data = t[prefix];
 
 const accentMap = {
+  azure: {
+    chip: "bg-azure-100 text-azure-700",
+    ring: "ring-azure-100",
+    check: "text-azure-600",
+    cta: "azure" as const,
+  },
   ocean: {
     chip: "bg-ocean-100 text-ocean-700",
     ring: "ring-ocean-100",
+    check: "text-ocean-600",
     cta: "primary" as const,
   },
   leaf: {
     chip: "bg-leaf-100 text-leaf-700",
     ring: "ring-leaf-100",
+    check: "text-leaf-600",
     cta: "secondary" as const,
   },
 };
@@ -67,7 +75,7 @@ const textCol = reverse ? "lg:order-1" : "";
         </p>
 
         <!-- Tabs -->
-        <div class="mt-8" data-tabs>
+        <div class="mt-8" data-tabs data-accent={accent}>
           <div
             role="tablist"
             aria-label="Service details"
@@ -79,7 +87,7 @@ const textCol = reverse ? "lg:order-1" : "";
               data-tab-btn="construction"
               aria-selected="true"
               aria-controls={`${id}-construction`}
-              class="tab-btn rounded-full px-5 py-2 text-sm font-semibold text-ocean-700 transition"
+              class="tab-btn rounded-full px-5 py-2 text-sm font-semibold text-slate-600 transition"
               data-i18n={`${prefix}.construction.tab`}
             >
               {data.construction.tab}
@@ -90,7 +98,7 @@ const textCol = reverse ? "lg:order-1" : "";
               data-tab-btn="maintenance"
               aria-selected="false"
               aria-controls={`${id}-maintenance`}
-              class="tab-btn rounded-full px-5 py-2 text-sm font-semibold text-ocean-700 transition"
+              class="tab-btn rounded-full px-5 py-2 text-sm font-semibold text-slate-600 transition"
               data-i18n={`${prefix}.maintenance.tab`}
             >
               {data.maintenance.tab}
@@ -122,9 +130,7 @@ const textCol = reverse ? "lg:order-1" : "";
                   <li class="flex items-start gap-2.5 text-sm text-slate-700">
                     <Icon
                       name="checkCircle"
-                      class={`mt-0.5 h-5 w-5 shrink-0 ${
-                        accent === "leaf" ? "text-leaf-600" : "text-ocean-600"
-                      }`}
+                      class={`mt-0.5 h-5 w-5 shrink-0 ${a.check}`}
                     />
                     <span data-i18n={`${prefix}.construction.features.${i}`}>
                       {feat}
@@ -161,9 +167,7 @@ const textCol = reverse ? "lg:order-1" : "";
                   <li class="flex items-start gap-2.5 text-sm text-slate-700">
                     <Icon
                       name="checkCircle"
-                      class={`mt-0.5 h-5 w-5 shrink-0 ${
-                        accent === "leaf" ? "text-leaf-600" : "text-ocean-600"
-                      }`}
+                      class={`mt-0.5 h-5 w-5 shrink-0 ${a.check}`}
                     />
                     <span data-i18n={`${prefix}.maintenance.features.${i}`}>
                       {feat}

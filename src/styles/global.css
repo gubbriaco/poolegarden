@@ -23,6 +23,19 @@
   --color-ocean-900: #144055;
   --color-ocean-950: #062836;
 
+  /* Azure — lighter sky-blue accent (pools) */
+  --color-azure-50: #f0f9ff;
+  --color-azure-100: #e0f2fe;
+  --color-azure-200: #bae6fd;
+  --color-azure-300: #7dd3fc;
+  --color-azure-400: #38bdf8;
+  --color-azure-500: #0ea5e9;
+  --color-azure-600: #0284c7;
+  --color-azure-700: #0369a1;
+  --color-azure-800: #075985;
+  --color-azure-900: #0c4a6e;
+  --color-azure-950: #082f49;
+
   /* Leaf — secondary (greenery) */
   --color-leaf-50: #f0f9ec;
   --color-leaf-100: #dcefd2;
@@ -170,11 +183,21 @@
   color: #fff;
 }
 
-/* Service tab active state */
-.tab-btn[aria-selected="true"] {
+/* Service tab active state — colored per section accent */
+[data-accent="azure"] .tab-btn[aria-selected="true"] {
+  background: var(--color-azure-500);
+  color: #fff;
+  border-color: var(--color-azure-500);
+}
+[data-accent="ocean"] .tab-btn[aria-selected="true"] {
   background: var(--color-ocean-600);
   color: #fff;
   border-color: var(--color-ocean-600);
+}
+[data-accent="leaf"] .tab-btn[aria-selected="true"] {
+  background: var(--color-leaf-500);
+  color: #fff;
+  border-color: var(--color-leaf-500);
 }
 
 /* Navbar depth on scroll (glassmorphism still kept via backdrop-blur) */

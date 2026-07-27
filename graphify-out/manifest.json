@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "src/sections/Hero.astro": {
-    "mtime": 1785177958.188447,
-    "ast_hash": "345418e57e31445d7d8289a0d5c6afef",
+    "mtime": 1785178505.5240104,
+    "ast_hash": "699ac489f1c5dd329ef747848cef2a2b",
     "semantic_hash": ""
   },
   "src/sections/Newsletter.astro": {
