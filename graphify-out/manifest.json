@@ -135,8 +135,8 @@
     "semantic_hash": "e4a4e9568d310aa447b42ca2db5a7a11"
   },
   "src/sections/Footer.astro": {
-    "mtime": 1785136260.083256,
-    "ast_hash": "15dadcb59836d39ba9601acab49d7d74",
+    "mtime": 1785137178.879493,
+    "ast_hash": "465dc00cba0f37c6c15047488775bc6a",
     "semantic_hash": ""
   },
   "src/sections/Gallery.astro": {
@@ -145,19 +145,19 @@
     "semantic_hash": "6aecf385e7dd1da1a3ae396deb5abc90"
   },
   "src/sections/Header.astro": {
-    "mtime": 1785136250.6606314,
-    "ast_hash": "9f804fbcd050941e4f304037191e3813",
+    "mtime": 1785137166.600889,
+    "ast_hash": "ff1dc7c88a55302ef8fae1eb4b0dd5e2",
     "semantic_hash": ""
   },
   "src/sections/Hero.astro": {
-    "mtime": 1785136292.6775012,
-    "ast_hash": "3ddf943476dd8ba04eb204ae3a24e3d9",
+    "mtime": 1785137149.3021636,
+    "ast_hash": "417f614eb62e39fa1acae2b0e5a0ae9b",
     "semantic_hash": ""
   },
   "src/sections/Newsletter.astro": {
-    "mtime": 1785089711.2427747,
-    "ast_hash": "ae3fbc4d47397d65e9ca156f0379fca4",
-    "semantic_hash": "ae3fbc4d47397d65e9ca156f0379fca4"
+    "mtime": 1785137156.465205,
+    "ast_hash": "247932ad12d360def224bf09c83080d1",
+    "semantic_hash": ""
   },
   "src/sections/ServiceBlock.astro": {
     "mtime": 1785091967.7204278,

@@ -25,9 +25,9 @@ const legalLinks = [
     <div class="grid gap-10 lg:grid-cols-12">
       <!-- Brand + socials -->
       <div class="lg:col-span-4">
-        <a href="/" class="inline-flex items-center gap-2" aria-label={site.name}>
-          <img src={logo.src} alt={`${site.name} logo`} width="160" height="40" class="h-10 w-auto" />
-          <span class="text-lg font-extrabold text-white">{site.name}</span>
+        <a href="#top" class="group inline-flex items-center gap-2" aria-label={site.name}>
+          <img src={logo.src} alt={`${site.name} logo`} width="160" height="40" class="h-10 w-auto transition-transform duration-300 ease-out group-hover:scale-105" />
+          <span class="text-lg font-extrabold text-white transition-colors duration-300 group-hover:text-ocean-100">{site.name}</span>
         </a>
         <p class="mt-4 max-w-sm text-sm leading-relaxed" data-i18n="footer.tagline">
           {t.footer.tagline}
