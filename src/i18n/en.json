@@ -220,6 +220,7 @@
     "hoursLabel": "Hours",
     "hoursValue": "Mon–Fri: 8:30am–6:30pm · Sat: 9:00am–12:30pm",
     "mapTitle": "Where we are",
+    "directions": "Get directions",
     "form": {
       "title": "Write to us",
       "name": "Full name",

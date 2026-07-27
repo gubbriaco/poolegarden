@@ -24,19 +24,24 @@ const t = translations.it as any;
   />
   <!-- Gradient overlay for text contrast (weighted to the text side) -->
   <div
-    class="absolute inset-0 -z-10 bg-gradient-to-br from-ocean-950 via-ocean-950/90 to-ocean-900/70"
+    class="absolute inset-0 -z-10 bg-gradient-to-br from-ocean-950 via-ocean-950/90 to-ocean-900/75"
   >
   </div>
   <!-- Extra left-side scrim behind the copy for guaranteed contrast -->
   <div
-    class="absolute inset-0 -z-10 bg-gradient-to-r from-ocean-950/70 via-ocean-950/20 to-transparent"
+    class="absolute inset-0 -z-10 bg-gradient-to-r from-ocean-950/80 via-ocean-950/25 to-transparent"
+  >
+  </div>
+  <!-- Bottom scrim so the stats row stays legible over bright imagery -->
+  <div
+    class="absolute inset-x-0 bottom-0 -z-10 h-2/3 bg-gradient-to-t from-ocean-950/85 via-ocean-950/30 to-transparent"
   >
   </div>
 
   <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-36">
     <div class="max-w-3xl">
       <span
-        class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium backdrop-blur"
+        class="hero-text inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white backdrop-blur"
         data-reveal
       >
         <Icon name="sparkles" class="h-4 w-4 text-leaf-300" />
@@ -49,13 +54,13 @@ const t = translations.it as any;
         data-reveal-delay="1"
       >
         <span data-i18n="hero.titlePre">{t.hero.titlePre}</span>
-        <span class="mt-1 block text-white drop-shadow-[0_4px_20px_rgba(2,28,40,0.45)]">
+        <span class="mt-1 block text-white drop-shadow-[0_4px_20px_rgba(2,28,40,0.5)]">
           <span data-i18n="hero.titleHighlight">{t.hero.titleHighlight}</span>
         </span>
       </h1>
 
       <p
-        class="hero-sub mt-6 max-w-xl text-base leading-relaxed text-ocean-50/95 sm:text-lg lg:text-xl"
+        class="hero-sub mt-6 max-w-xl text-base leading-relaxed text-white/95 sm:text-lg lg:text-xl"
         data-reveal
         data-reveal-delay="2"
         data-i18n="hero.subtitle"
@@ -83,14 +88,14 @@ const t = translations.it as any;
           t.hero.stats.map((s: any, i: number) => (
             <div>
               <dt
-                class="font-display text-3xl font-extrabold text-white sm:text-4xl"
+                class="hero-text font-display text-3xl font-extrabold text-white sm:text-4xl"
                 data-countup
                 data-i18n={`hero.stats.${i}.value`}
               >
                 {s.value}
               </dt>
               <dd
-                class="mt-1 text-xs font-medium text-ocean-100/80 sm:text-sm"
+                class="hero-text mt-1 text-xs font-semibold text-white/85 sm:text-sm"
                 data-i18n={`hero.stats.${i}.label`}
               >
                 {s.label}

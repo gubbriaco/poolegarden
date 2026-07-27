@@ -50,9 +50,9 @@
     "semantic_hash": "13222ad37d031dd9475ddcce8ba8cce5"
   },
   "public/js/main.js": {
-    "mtime": 1785091954.4338913,
-    "ast_hash": "5ab54017a365fa3f96e8e60be64b5744",
-    "semantic_hash": "5ab54017a365fa3f96e8e60be64b5744"
+    "mtime": 1785154268.1832802,
+    "ast_hash": "ec5697b04ffdc1d33568fda2cfb1b0ca",
+    "semantic_hash": ""
   },
   "src/components/CTAButton.astro": {
     "mtime": 1785089510.5985162,
@@ -80,14 +80,14 @@
     "semantic_hash": "0db503b4046680f975aacb4f4c9d3510"
   },
   "src/i18n/en.json": {
-    "mtime": 1785089363.1375933,
-    "ast_hash": "80dea75013f1f3421d00f7abcc872a37",
-    "semantic_hash": "80dea75013f1f3421d00f7abcc872a37"
+    "mtime": 1785137714.857942,
+    "ast_hash": "64bfe9afd4f527153a2d23a4e650a40d",
+    "semantic_hash": ""
   },
   "src/i18n/it.json": {
-    "mtime": 1785089321.2486424,
-    "ast_hash": "7e778b662c8180023298746847b87720",
-    "semantic_hash": "7e778b662c8180023298746847b87720"
+    "mtime": 1785137705.946031,
+    "ast_hash": "4653362b241e1468f53bb2ed56a9d8f7",
+    "semantic_hash": ""
   },
   "src/i18n/translations.ts": {
     "mtime": 1785089372.802939,
@@ -125,8 +125,8 @@
     "semantic_hash": "bfbad937180697fc15385d08115992ff"
   },
   "src/sections/Contact.astro": {
-    "mtime": 1785136359.9251626,
-    "ast_hash": "0a598ff4cf8ce7cd0277bd1aa2d25e5f",
+    "mtime": 1785137802.616832,
+    "ast_hash": "376b117cf8d11c095e439e91fed37359",
     "semantic_hash": ""
   },
   "src/sections/CookieConsent.astro": {
@@ -135,8 +135,8 @@
     "semantic_hash": "e4a4e9568d310aa447b42ca2db5a7a11"
   },
   "src/sections/Footer.astro": {
-    "mtime": 1785137178.879493,
-    "ast_hash": "465dc00cba0f37c6c15047488775bc6a",
+    "mtime": 1785154249.928559,
+    "ast_hash": "7ab004c37f20fe0940eb37ecdbf6b7da",
     "semantic_hash": ""
   },
   "src/sections/Gallery.astro": {
@@ -145,13 +145,13 @@
     "semantic_hash": "6aecf385e7dd1da1a3ae396deb5abc90"
   },
   "src/sections/Header.astro": {
-    "mtime": 1785137166.600889,
-    "ast_hash": "ff1dc7c88a55302ef8fae1eb4b0dd5e2",
+    "mtime": 1785154239.5663064,
+    "ast_hash": "b02385987c131436678fd2001ac1b4d8",
     "semantic_hash": ""
   },
   "src/sections/Hero.astro": {
-    "mtime": 1785137149.3021636,
-    "ast_hash": "417f614eb62e39fa1acae2b0e5a0ae9b",
+    "mtime": 1785137764.616728,
+    "ast_hash": "345418e57e31445d7d8289a0d5c6afef",
     "semantic_hash": ""
   },
   "src/sections/Newsletter.astro": {

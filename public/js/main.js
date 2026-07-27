@@ -325,6 +325,26 @@
     }
   });
 
+  /* ---------- Brand logo / company name: smooth scroll to very top ---------- */
+  ready(function () {
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document.querySelectorAll("[data-scroll-top]").forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        // Close the mobile menu first if it is open (brand sits above it).
+        var toggle = document.querySelector("[data-menu-toggle]");
+        if (toggle && toggle.getAttribute("aria-expanded") === "true") {
+          toggle.click();
+        }
+        try {
+          window.scrollTo({ top: 0, left: 0, behavior: reduce ? "auto" : "smooth" });
+        } catch (err) {
+          window.scrollTo(0, 0);
+        }
+      });
+    });
+  });
+
   /* ---------- Footer "cookie settings" link ---------- */
   ready(function () {
     var link = document.querySelector("[data-cookie-settings-link]");

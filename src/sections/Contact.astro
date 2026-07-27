@@ -51,9 +51,10 @@ const socials = [
 ];
 
 const map = site.map;
-const bbox = `${map.lng - map.delta},${map.lat - map.delta},${map.lng + map.delta},${map.lat + map.delta}`;
-const mapSrc = `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${map.lat},${map.lng}`;
-const mapLink = `https://www.openstreetmap.org/?mlat=${map.lat}&mlon=${map.lng}#map=15/${map.lat}/${map.lng}`;
+// Google Maps embed — keyless & free (same source as "Share → Embed a map").
+// Replace lat/lng in src/data/site.ts (site.map) with the real business location.
+const mapSrc = `https://maps.google.com/maps?q=${map.lat},${map.lng}&z=15&output=embed`;
+const mapLink = `https://www.google.com/maps/dir/?api=1&destination=${map.lat},${map.lng}`;
 ---
 
 <section id="contatti" class="scroll-mt-24 bg-white py-20 sm:py-28">
@@ -265,6 +266,8 @@ const mapLink = `https://www.openstreetmap.org/?mlat=${map.lat}&mlon=${map.lng}#
         class="h-72 w-full sm:h-96"
         style="border:0"
         loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
         data-i18n-attr="title:contact.mapTitle"
       ></iframe>
       <div class="flex flex-col gap-2 bg-sand-50 px-4 py-3 text-sm sm:flex-row sm:items-center sm:justify-between">
@@ -275,10 +278,10 @@ const mapLink = `https://www.openstreetmap.org/?mlat=${map.lat}&mlon=${map.lng}#
           href={mapLink}
           target="_blank"
           rel="noopener noreferrer"
-          class="font-semibold text-ocean-600 hover:underline"
-          data-i18n="common.readMore"
+          class="inline-flex items-center gap-1.5 font-semibold text-ocean-600 hover:underline"
+          data-i18n="contact.directions"
         >
-          {t.common.readMore}
+          {t.contact.directions}
         </a>
       </div>
     </div>
