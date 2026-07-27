@@ -22,9 +22,14 @@ const t = translations.it as any;
     fetchpriority="high"
     referrerpolicy="no-referrer"
   />
-  <!-- Gradient overlay for text contrast -->
+  <!-- Gradient overlay for text contrast (weighted to the text side) -->
   <div
-    class="absolute inset-0 -z-10 bg-gradient-to-br from-ocean-950/92 via-ocean-950/80 to-ocean-800/55"
+    class="absolute inset-0 -z-10 bg-gradient-to-br from-ocean-950 via-ocean-950/90 to-ocean-900/70"
+  >
+  </div>
+  <!-- Extra left-side scrim behind the copy for guaranteed contrast -->
+  <div
+    class="absolute inset-0 -z-10 bg-gradient-to-r from-ocean-950/70 via-ocean-950/20 to-transparent"
   >
   </div>
 
@@ -39,18 +44,18 @@ const t = translations.it as any;
       </span>
 
       <h1
-        class="mt-6 font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl"
+        class="hero-title mt-6 font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl"
         data-reveal
         data-reveal-delay="1"
       >
         <span data-i18n="hero.titlePre">{t.hero.titlePre}</span>
-        <span class="mt-1 block bg-gradient-to-r from-ocean-200 to-leaf-300 bg-clip-text text-transparent">
+        <span class="mt-1 block text-white drop-shadow-[0_4px_20px_rgba(2,28,40,0.45)]">
           <span data-i18n="hero.titleHighlight">{t.hero.titleHighlight}</span>
         </span>
       </h1>
 
       <p
-        class="mt-6 max-w-xl text-base leading-relaxed text-ocean-50/90 sm:text-lg lg:text-xl"
+        class="hero-sub mt-6 max-w-xl text-base leading-relaxed text-ocean-50/95 sm:text-lg lg:text-xl"
         data-reveal
         data-reveal-delay="2"
         data-i18n="hero.subtitle"

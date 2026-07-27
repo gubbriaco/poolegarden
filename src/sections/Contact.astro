@@ -65,8 +65,8 @@ const mapLink = `https://www.openstreetmap.org/?mlat=${map.lat}&mlon=${map.lng}#
       data-reveal
     />
 
-    <div class="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-14">
-      <!-- Left: info + map -->
+    <div class="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-14 lg:items-start">
+      <!-- Left: info + socials -->
       <div class="space-y-8" data-reveal>
         <ul class="space-y-4">
           {
@@ -136,31 +136,7 @@ const mapLink = `https://www.openstreetmap.org/?mlat=${map.lat}&mlon=${map.lng}#
           </div>
         </div>
 
-        <!-- Map -->
-        <div class="overflow-hidden rounded-3xl border border-slate-200 shadow-sm">
-          <iframe
-            title={t.contact.mapTitle}
-            src={mapSrc}
-            class="h-64 w-full"
-            style="border:0"
-            loading="lazy"
-            data-i18n-attr="title:contact.mapTitle"
-          ></iframe>
-          <div class="flex items-center justify-between gap-2 bg-sand-50 px-4 py-3 text-sm">
-            <span class="font-medium text-slate-600">
-              {site.legalName} — {site.address.street}, {site.address.city}
-            </span>
-            <a
-              href={mapLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="font-semibold text-ocean-600 hover:underline"
-              data-i18n="common.readMore"
-            >
-              {t.common.readMore}
-            </a>
-          </div>
-        </div>
+        <!-- Map moved to a full-width block below for balanced layout -->
       </div>
 
       <!-- Right: form -->
@@ -278,6 +254,32 @@ const mapLink = `https://www.openstreetmap.org/?mlat=${map.lat}&mlon=${map.lng}#
 
           <p data-form-status class="mt-4 hidden text-center text-sm font-medium" role="status" aria-live="polite"></p>
         </form>
+      </div>
+    </div>
+
+    <!-- Full-width map: balanced beneath both columns -->
+    <div class="mt-10 overflow-hidden rounded-3xl border border-slate-200 shadow-sm" data-reveal>
+      <iframe
+        title={t.contact.mapTitle}
+        src={mapSrc}
+        class="h-72 w-full sm:h-96"
+        style="border:0"
+        loading="lazy"
+        data-i18n-attr="title:contact.mapTitle"
+      ></iframe>
+      <div class="flex flex-col gap-2 bg-sand-50 px-4 py-3 text-sm sm:flex-row sm:items-center sm:justify-between">
+        <span class="font-medium text-slate-600">
+          {site.legalName} — {site.address.street}, {site.address.city}
+        </span>
+        <a
+          href={mapLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-semibold text-ocean-600 hover:underline"
+          data-i18n="common.readMore"
+        >
+          {t.common.readMore}
+        </a>
       </div>
     </div>
   </div>
