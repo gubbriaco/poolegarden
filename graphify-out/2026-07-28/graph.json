@@ -53,37 +53,26 @@
       "norm_label": "l()"
     },
     {
+      "label": "U()",
+      "file_type": "code",
+      "source_file": "src/data/images.ts",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "src_data_images_u",
+      "community": 0,
+      "community_name": "tsconfig.json",
+      "norm_label": "u()"
+    },
+    {
       "label": "images",
       "file_type": "code",
       "source_file": "src/data/images.ts",
-      "source_location": "L16",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "src_data_images_images",
       "community": 0,
       "community_name": "tsconfig.json",
       "norm_label": "images"
-    },
-    {
-      "label": "ServiceBlock.astro",
-      "file_type": "code",
-      "source_file": "src/sections/ServiceBlock.astro",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_sections_serviceblock",
-      "community": 0,
-      "community_name": "tsconfig.json",
-      "norm_label": "serviceblock.astro"
-    },
-    {
-      "label": "accentMap",
-      "file_type": "code",
-      "source_file": "src/sections/ServiceBlock.astro",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "src_sections_serviceblock_accentmap",
-      "community": 0,
-      "community_name": "tsconfig.json",
-      "norm_label": "accentmap"
     },
     {
       "label": "astro.config.mjs",
@@ -443,8 +432,8 @@
       "source_file": "src/components/CTAButton.astro",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 0,
-      "community_name": "tsconfig.json",
+      "community": 16,
+      "community_name": "CTAButton.astro",
       "norm_label": "ctabutton.astro",
       "id": "src_components_ctabutton"
     },
@@ -454,8 +443,8 @@
       "source_file": "src/components/CTAButton.astro",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 0,
-      "community_name": "tsconfig.json",
+      "community": 16,
+      "community_name": "CTAButton.astro",
       "norm_label": "sizes",
       "id": "src_components_ctabutton_sizes"
     },
@@ -465,8 +454,8 @@
       "source_file": "src/components/CTAButton.astro",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 0,
-      "community_name": "tsconfig.json",
+      "community": 16,
+      "community_name": "CTAButton.astro",
       "norm_label": "variants",
       "id": "src_components_ctabutton_variants"
     },
@@ -867,6 +856,28 @@
       "id": "src_sections_newsletter"
     },
     {
+      "label": "ServiceBlock.astro",
+      "file_type": "code",
+      "source_file": "src/sections/ServiceBlock.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "CTAButton.astro",
+      "norm_label": "serviceblock.astro",
+      "id": "src_sections_serviceblock"
+    },
+    {
+      "label": "accentMap",
+      "file_type": "code",
+      "source_file": "src/sections/ServiceBlock.astro",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "CTAButton.astro",
+      "norm_label": "accentmap",
+      "id": "src_sections_serviceblock_accentmap"
+    },
+    {
       "label": "ServicesOverview.astro",
       "file_type": "code",
       "source_file": "src/sections/ServicesOverview.astro",
@@ -1105,7 +1116,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/images.ts",
-      "source_location": "L16",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_data_images",
@@ -1124,180 +1135,135 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/layouts/Layout.astro",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_layouts_layout",
-      "target": "src_data_images"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/pages/index.astro",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_pages_index",
-      "target": "src_data_images"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/sections/About.astro",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_sections_about",
-      "target": "src_data_images"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/sections/Gallery.astro",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_sections_gallery",
-      "target": "src_data_images"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/sections/Hero.astro",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_sections_hero",
-      "target": "src_data_images"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/layouts/Layout.astro",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_layouts_layout",
-      "target": "src_data_images_images"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/pages/index.astro",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_pages_index",
-      "target": "src_data_images_images"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/sections/About.astro",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_sections_about",
-      "target": "src_data_images_images"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/sections/Gallery.astro",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_sections_gallery",
-      "target": "src_data_images_images"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/sections/Hero.astro",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_sections_hero",
-      "target": "src_data_images_images"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/pages/index.astro",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_pages_index",
-      "target": "src_sections_serviceblock"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/sections/ServiceBlock.astro",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_sections_serviceblock",
-      "target": "src_components_ctabutton",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/sections/ServiceBlock.astro",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_sections_serviceblock",
-      "target": "src_components_icon",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "confidence": "EXTRACTED",
-      "source_file": "src/sections/ServiceBlock.astro",
-      "_origin": "ast",
-      "source": "src_sections_serviceblock",
-      "target": "src_i18n_translations",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/sections/ServiceBlock.astro",
-      "source_location": "L30",
+      "source_file": "src/data/images.ts",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_sections_serviceblock",
-      "target": "src_sections_serviceblock_accentmap",
+      "source": "src_data_images",
+      "target": "src_data_images_u",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_data_images"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_pages_index",
+      "target": "src_data_images"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/sections/About.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_sections_about",
+      "target": "src_data_images"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/sections/Gallery.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_sections_gallery",
+      "target": "src_data_images"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/sections/Hero.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_sections_hero",
+      "target": "src_data_images"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_data_images_images"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_pages_index",
+      "target": "src_data_images_images"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/sections/About.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_sections_about",
+      "target": "src_data_images_images"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/sections/Gallery.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_sections_gallery",
+      "target": "src_data_images_images"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/sections/Hero.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_sections_hero",
+      "target": "src_data_images_images"
     },
     {
       "relation": "contains",
@@ -1729,6 +1695,18 @@
       "target": "src_components_ctabutton"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/sections/ServiceBlock.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_sections_serviceblock",
+      "target": "src_components_ctabutton"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/Icon.astro",
@@ -1821,6 +1799,18 @@
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "src_sections_newsletter",
+      "target": "src_components_icon"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/sections/ServiceBlock.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_sections_serviceblock",
       "target": "src_components_icon"
     },
     {
@@ -2304,6 +2294,15 @@
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
+      "source_file": "src/sections/ServiceBlock.astro",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_sections_serviceblock",
+      "target": "src_i18n_translations"
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
       "source_file": "src/sections/ServicesOverview.astro",
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -2640,6 +2639,18 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/index.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_pages_index",
+      "target": "src_sections_serviceblock"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
@@ -2731,6 +2742,17 @@
       "confidence_score": 1.0,
       "source": "src_sections_header",
       "target": "src_sections_header_tr"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/sections/ServiceBlock.astro",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_sections_serviceblock",
+      "target": "src_sections_serviceblock_accentmap"
     },
     {
       "relation": "extends",
@@ -2853,5 +2875,5 @@
       "source_file": "AGENTS.md"
     }
   ],
-  "built_at_commit": "b9668286ceca200489ff5f137aed9ad3ac5096b4"
+  "built_at_commit": "2c376d101e0f9ca6827c20f8fca402ed297e263f"
 }

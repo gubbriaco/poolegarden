@@ -23,17 +23,27 @@ const valueIcons = ["shield", "sparkles", "leaf"];
     <div class="mt-14 grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
       <!-- Image -->
       <div class="relative" data-reveal>
-        <div class="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl ring-1 ring-ocean-100">
+        <button
+          type="button"
+          data-lightbox-trigger
+          data-full={images.about}
+          data-alt={t.about.title}
+          aria-label={t.about.title}
+          class="group relative block aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-xl ring-1 ring-ocean-100 focus-visible:outline-none"
+        >
           <img
             src={images.about}
             alt={t.about.title}
             loading="lazy"
             decoding="async"
             referrerpolicy="no-referrer"
-            class="absolute inset-0 h-full w-full object-cover"
+            class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-ocean-950/30 to-transparent"></div>
-        </div>
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ocean-950/30 to-transparent"></div>
+          <span class="absolute right-3 top-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-ocean-700 opacity-0 shadow-lg backdrop-blur transition-opacity duration-300 group-hover:opacity-100">
+            <Icon name="maximize" class="h-4 w-4" />
+          </span>
+        </button>
         <!-- Floating experience badge -->
         <div class="absolute -bottom-6 -right-3 flex items-center gap-3 rounded-2xl bg-white p-4 shadow-xl ring-1 ring-ocean-100 sm:-right-6">
           <span

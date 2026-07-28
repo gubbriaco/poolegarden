@@ -189,26 +189,36 @@ const textCol = reverse ? "lg:order-1" : "";
 
       <!-- Image column -->
       <div class={imgCol} data-reveal data-reveal-delay="2">
-        <div class={`relative aspect-[4/3] overflow-hidden rounded-3xl ring-1 ${a.ring} shadow-xl`}>
+        <button
+          type="button"
+          data-lightbox-trigger
+          data-full={image}
+          data-alt={data.title}
+          aria-label={data.title}
+          class={`group relative block aspect-[4/3] w-full overflow-hidden rounded-3xl ring-1 ${a.ring} shadow-xl focus-visible:outline-none`}
+        >
           <img
             src={image}
             alt={data.title}
             loading="lazy"
             decoding="async"
             referrerpolicy="no-referrer"
-            class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+            class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
           <div
             class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ocean-950/45 via-ocean-950/5 to-transparent"
           >
           </div>
+          <span class="absolute right-3 top-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-ocean-700 opacity-0 shadow-lg backdrop-blur transition-opacity duration-300 group-hover:opacity-100">
+            <Icon name="maximize" class="h-4 w-4" />
+          </span>
           <div
             class="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-ocean-800 shadow-lg"
           >
             <Icon name="sparkles" class="h-4 w-4 text-leaf-500" />
             <span class="hidden sm:inline" data-i18n="common.freeQuote">Free quote</span>
           </div>
-        </div>
+        </button>
       </div>
     </div>
   </div>

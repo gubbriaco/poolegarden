@@ -1,16 +1,16 @@
-# Graph Report - poolegarden  (2026-07-28)
+# Graph Report - poolegarden  (2026-07-27)
 
 ## Corpus Check
-- 36 files · ~188,154 words
+- 36 files · ~107,286 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 95 nodes · 155 edges · 16 communities (11 shown, 5 thin omitted)
+- 96 nodes · 156 edges · 17 communities (12 shown, 5 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b9668286`
+- Built from commit: `2c376d10`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -28,6 +28,7 @@
 - i18n.js
 - Favicon
 - Header.astro
+- CTAButton.astro
 
 ## God Nodes (most connected - your core abstractions)
 1. `site` - 7 edges
@@ -50,11 +51,11 @@
 ## Hyperedges (group relationships)
 - **Graphify Tooling Workflow** — agents_md, claude_md, graphify_concept [EXTRACTED 1.00]
 
-## Communities (16 total, 5 thin omitted)
+## Communities (17 total, 5 thin omitted)
 
 ### Community 0 - "tsconfig.json"
-Cohesion: 0.20
-Nodes (7): sizes, variants, string, assets, images, items, accentMap
+Cohesion: 0.26
+Nodes (4): string, assets, images, items
 
 ### Community 1 - "package.json"
 Cohesion: 0.11
@@ -84,15 +85,19 @@ Nodes (3): applyLang(), init(), resolve()
 Cohesion: 0.50
 Nodes (3): Pool & Garden Logo, jsonLd, ogImageURL
 
+### Community 16 - "CTAButton.astro"
+Cohesion: 0.40
+Nodes (3): sizes, variants, accentMap
+
 ## Knowledge Gaps
-- **32 isolated node(s):** `assets`, `accentMap`, `name`, `type`, `version` (+27 more)
+- **32 isolated node(s):** `assets`, `name`, `type`, `version`, `node` (+27 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What connects `assets`, `accentMap`, `name` to the rest of the system?**
+- **What connects `assets`, `name`, `type` to the rest of the system?**
   _32 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
