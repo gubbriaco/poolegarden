@@ -14,5 +14,6 @@
   "12": "astro.config.mjs",
   "13": "Favicon",
   "14": "robots.txt",
-  "15": "Header.astro"
+  "15": "Header.astro",
+  "16": "CTAButton.astro"
 }

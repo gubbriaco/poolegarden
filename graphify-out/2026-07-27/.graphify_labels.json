@@ -8,6 +8,11 @@
   "6": "Astro Framework",
   "7": "astro.config.mjs",
   "8": "Favicon",
+  "9": "Footer.astro",
   "10": "main.js",
-  "11": "i18n.js"
+  "11": "i18n.js",
+  "12": "astro.config.mjs",
+  "13": "Favicon",
+  "14": "robots.txt",
+  "15": "Header.astro"
 }

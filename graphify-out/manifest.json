@@ -190,8 +190,38 @@
     "semantic_hash": "2821fa59a72a6db3d6d8e10ab377434c"
   },
   "src/data/images.ts": {
-    "mtime": 1785091834.855305,
-    "ast_hash": "d868e6e67da3067b56bdfddf3d1cbf79",
-    "semantic_hash": "d868e6e67da3067b56bdfddf3d1cbf79"
+    "mtime": 1785184453.6038914,
+    "ast_hash": "52504be2aeb593103ea4f70098ca12bd",
+    "semantic_hash": ""
+  },
+  "src/assets/about.jpeg": {
+    "mtime": 1785183466.8060102,
+    "ast_hash": "1d93ef3b5f11e559634bf7b608d8571c",
+    "semantic_hash": ""
+  },
+  "src/assets/gallery2.jpeg": {
+    "mtime": 1785183466.767961,
+    "ast_hash": "431d0f8fcc362555911cfa328f500244",
+    "semantic_hash": ""
+  },
+  "src/assets/hero.jpeg": {
+    "mtime": 1785183864.5299299,
+    "ast_hash": "23005625fc7af59eb59c69bcb2e3fc82",
+    "semantic_hash": ""
+  },
+  "src/assets/irrigazione.webp": {
+    "mtime": 1785184183.2651618,
+    "ast_hash": "06d88d9fdda0383b984c87448618ce59",
+    "semantic_hash": ""
+  },
+  "src/assets/piscine.jpeg": {
+    "mtime": 1785183466.8482902,
+    "ast_hash": "7874d24640adfa38998c44e8f9669dbd",
+    "semantic_hash": ""
+  },
+  "src/assets/prati.jpg": {
+    "mtime": 1785184183.3241615,
+    "ast_hash": "1dfa890ad9fc294a02d03d7e6eb7b042",
+    "semantic_hash": ""
   }
 }
