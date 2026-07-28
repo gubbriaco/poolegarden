@@ -75,18 +75,18 @@
     "semantic_hash": "c9fad8a7201f7c6e2792cc72c65d2304"
   },
   "src/data/site.ts": {
-    "mtime": 1785091843.101099,
-    "ast_hash": "0db503b4046680f975aacb4f4c9d3510",
-    "semantic_hash": "0db503b4046680f975aacb4f4c9d3510"
+    "mtime": 1785228512.9425383,
+    "ast_hash": "00ac7566a33eac02b6425ac1f6001b66",
+    "semantic_hash": ""
   },
   "src/i18n/en.json": {
-    "mtime": 1785137714.857942,
-    "ast_hash": "64bfe9afd4f527153a2d23a4e650a40d",
+    "mtime": 1785229264.4169567,
+    "ast_hash": "1b65f0fb49a25468d5697c424f95c19b",
     "semantic_hash": ""
   },
   "src/i18n/it.json": {
-    "mtime": 1785137705.946031,
-    "ast_hash": "4653362b241e1468f53bb2ed56a9d8f7",
+    "mtime": 1785229247.5125847,
+    "ast_hash": "fe31a2a6f45b040d71e150e73fd59adf",
     "semantic_hash": ""
   },
   "src/i18n/translations.ts": {

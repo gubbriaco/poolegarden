@@ -28,15 +28,15 @@
     "backToTop": "Torna su"
   },
   "hero": {
-    "badge": "Costruiamo e curiamo spazi all'aperto dal 2005",
+    "badge": "Costruiamo e curiamo spazi all'aperto dal 2021",
     "titlePre": "Piscine, irrigazione e prati sintetici",
     "titleHighlight": "su misura per te",
-    "subtitle": "Progettiamo, realizziamo e manteniamo spazi verdi e acquatici con materiali premium e oltre 20 anni di esperienza al tuo servizio.",
+    "subtitle": "Progettiamo, realizziamo e manteniamo spazi verdi e acquatici con materiali premium e oltre 5 anni di esperienza al tuo servizio.",
     "ctaPrimary": "Richiedi un preventivo",
     "ctaSecondary": "Scopri i servizi",
     "stats": [
-      { "value": "20+", "label": "anni di esperienza" },
-      { "value": "500+", "label": "progetti realizzati" },
+      { "value": "5+", "label": "anni di esperienza" },
+      { "value": "20+", "label": "progetti realizzati" },
       { "value": "3", "label": "servizi specializzati" },
       { "value": "100%", "label": "clienti soddisfatti" }
     ]
@@ -175,7 +175,7 @@
     ],
     "whyTitle": "Perché scegliere Pool & Garden",
     "why": [
-      "Oltre 20 anni di esperienza sul campo",
+      "Oltre 5 anni di esperienza sul campo",
       "Materiali e impianti certificati e garantiti",
       "Team specializzato e referenziato",
       "Servizio completo: progetto, installazione e manutenzione",
@@ -188,12 +188,12 @@
   "testimonials": {
     "eyebrow": "Recensioni",
     "title": "La fiducia dei nostri clienti",
-    "subtitle": "Oltre 500 progetti realizzati con la massima cura. Ecco cosa raccontano di noi.",
+    "subtitle": "Oltre 20 progetti realizzati con la massima cura. Ecco cosa raccontano di noi.",
     "items": [
-      { "name": "Marco Bellini", "location": "Bergamo", "text": "Piscina costruita nei tempi previsti e con finiture impeccabili. Team serio e puntuale, altamente consigliati." },
-      { "name": "Giulia Ratti", "location": "Milano", "text": "Hanno rifatto tutto l'impianto di irrigazione: prato verde e bolletta ridotta. Professionalità top." },
-      { "name": "Familia Conti", "location": "Brescia", "text": "Prato sintetico di ottima qualità, sembra vero. Installazione pulita e veloce, zero manutenzione." },
-      { "name": "Luca Ferrari", "location": "Como", "text": "Manutenzione piscina puntuale e accurata. Acqua sempre cristallina per tutta l'estate." }
+      { "name": "Carmine", "location": "Paola (CS)", "text": "Piscina costruita nei tempi previsti e con finiture impeccabili. Team serio e puntuale, altamente consigliati." },
+      { "name": "Francesco", "location": "Sangineto (CS)", "text": "Hanno rifatto tutto l'impianto di irrigazione. Professionalità top." },
+      { "name": "Vincenzo", "location": "Montalto Uffugo (CS)", "text": "Prato sintetico di ottima qualità, sembra vero. Installazione pulita e veloce, zero manutenzione." },
+      { "name": "Michele", "location": "Diamante (CS)", "text": "Manutenzione piscina puntuale e accurata. Acqua sempre cristallina per tutta l'estate." }
     ]
   },
   "gallery": {
@@ -201,11 +201,11 @@
     "title": "I nostri lavori",
     "subtitle": "Una selezione di progetti realizzati: piscine, giardini e prati sintetici. (Immagini placeholder — sostituibili con le foto dei cantieri reali.)",
     "captions": [
-      "Piscina infinity con parapetto in vetro e vista mare",
+      "Piscina con parapetto in vetro e vista mare",
       "Prato sintetico per giardino residenziale con vialetto",
       "Impianto di irrigazione per prati verdi",
       "Realizzazione di piscina interrata immersa nella natura",
-      "Piscina in fase di costruzione con scalinata a rientro",
+      "Piscina in fase di costruzione con scala recessa",
       "Irrigazione automatizzata per la cura del manto erboso",
       "Piscina personalizzata con area idromassaggio integrata",
       "Manutenzione ordinaria per un'acqua sempre cristallina",
@@ -221,7 +221,7 @@
     "whatsappLabel": "WhatsApp",
     "addressLabel": "Sede",
     "hoursLabel": "Orari",
-    "hoursValue": "Lun–Ven: 8:30–18:30 · Sab: 9:00–12:30",
+    "hoursValue": "Lun–Ven: 7:00–19:30",
     "mapTitle": "Dove siamo",
     "directions": "Indicazioni stradali",
     "form": {

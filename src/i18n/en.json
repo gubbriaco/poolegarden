@@ -28,10 +28,10 @@
     "backToTop": "Back to top"
   },
   "hero": {
-    "badge": "Building and caring for outdoor spaces since 2005",
+    "badge": "Building and caring for outdoor spaces since 2021",
     "titlePre": "Pools, irrigation and artificial lawns",
     "titleHighlight": "tailored for you",
-    "subtitle": "We design, build and maintain green and water spaces with premium materials and over 20 years of experience at your service.",
+    "subtitle": "We design, build and maintain green and water spaces with premium materials and over 5 years of experience at your service.",
     "ctaPrimary": "Request a quote",
     "ctaSecondary": "Explore services",
     "stats": [
@@ -175,7 +175,7 @@
     ],
     "whyTitle": "Why choose Pool & Garden",
     "why": [
-      "Over 20 years of field experience",
+      "Over 5 years of field experience",
       "Certified, guaranteed materials and systems",
       "Specialised, referenced team",
       "Full service: design, installation and maintenance",
@@ -188,12 +188,12 @@
   "testimonials": {
     "eyebrow": "Reviews",
     "title": "Our clients' trust",
-    "subtitle": "Over 500 projects delivered with the utmost care. Here is what they say about us.",
+    "subtitle": "Over 20 projects delivered with the utmost care. Here is what they say about us.",
     "items": [
-      { "name": "Marco Bellini", "location": "Bergamo", "text": "Pool built on schedule and with flawless finishes. Serious and punctual team, highly recommended." },
-      { "name": "Giulia Ratti", "location": "Milan", "text": "They redid the entire irrigation system: green lawn and lower bill. Top professionalism." },
-      { "name": "Conti Family", "location": "Brescia", "text": "Excellent quality artificial lawn, it looks real. Clean and fast installation, zero maintenance." },
-      { "name": "Luca Ferrari", "location": "Como", "text": "Punctual and thorough pool maintenance. Crystal-clear water all summer long." }
+      { "name": "Carmine", "location": "Paola (CS)", "text": "Pool built on schedule and with flawless finishes. Serious and punctual team, highly recommended." },
+      { "name": "Francesco", "location": "Sangineto (CS)", "text": "They redid the entire irrigation system. Top professionalism." },
+      { "name": "Vincenzo", "location": "Montalto Uffugo (CS)", "text": "Excellent quality artificial lawn, it looks real. Clean and fast installation, zero maintenance." },
+      { "name": "Michele", "location": "Diamante (CS)", "text": "Punctual and thorough pool maintenance. Crystal-clear water all summer long." }
     ]
   },
   "gallery": {
@@ -201,7 +201,7 @@
     "title": "Our work",
     "subtitle": "A selection of completed projects: pools, gardens and artificial lawns. (Placeholder images — replace with real site photos.)",
     "captions": [
-      "Infinity pool with glass railing and sea view",
+      "Pool with glass railing and sea view",
       "Artificial grass for residential garden with pathway",
       "Irrigation system for green lawns",
       "Construction of an in-ground pool nestled in nature",
@@ -221,7 +221,7 @@
     "whatsappLabel": "WhatsApp",
     "addressLabel": "Office",
     "hoursLabel": "Hours",
-    "hoursValue": "Mon–Fri: 8:30am–6:30pm · Sat: 9:00am–12:30pm",
+    "hoursValue": "Mon–Fri: 7:00am–7:30pm",
     "mapTitle": "Where we are",
     "directions": "Get directions",
     "form": {
