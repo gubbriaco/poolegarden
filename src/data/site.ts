@@ -17,16 +17,16 @@ export const site = {
     country: "Italia",
   },
   foundedYear: 2005,
-  domain: "https://www.poolegarden.example",
-  email: "info@poolegarden.example",
+  domain: "https://www.poolegarden.it",
+  email: "info@poolegarden.it",
   phone: "+39 02 1234 5678",
   phoneHref: "+390212345678",
   whatsapp: "393331234567",
   hoursIT: "Lun–Ven: 8:30–18:30 · Sab: 9:00–12:30",
   social: {
-    facebook: "https://www.facebook.com/",
-    instagram: "https://www.instagram.com/",
-    linkedin: "https://www.linkedin.com/",
+    facebook: "https://www.facebook.com/poolegarden",
+    instagram: "https://www.instagram.com/poolegarden",
+    linkedin: "https://it.linkedin.com/in/pool-garden-20a54473",
   },
   /** Approximate coordinates for the map embed (placeholder: Milan centre). */
   map: {
