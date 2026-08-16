@@ -279,28 +279,29 @@
       "title": "Informativa sulla Privacy",
       "body": [
         "La presente informativa descrive come Pool & Garden raccoglie, utilizza e protegge i dati personali degli utenti del sito, in conformità al Regolamento (UE) 2016/679 (GDPR).",
-        "Titolare del trattamento è Pool & Garden S.r.l., con sede in Via del Giardino 12, 20121 Milano (MI), Italia. Le finalità del trattamento includono: rispondere alle richieste inviate tramite i moduli del sito (contatto, preventivo, newsletter) e fornire i servizi richiesti.",
-        "Il trattamento avviene con il consenso dell'interessato e/o per l'esecuzione di un contratto. I dati sono conservati per il tempo strettamente necessario e comunque non oltre i termini di legge.",
-        "L'utente può esercitare in ogni momento i diritti di accesso, rettifica, cancellazione, limitazione, opposizione e portabilità scrivendo all'indirizzo email indicato nei contatti.",
-        "Questa è una informativa placeholder: sostituirla con l'informativa legale completa e aggiornata redatta dal titolare del trattamento."
+        "Titolare del trattamento è Pool & Garden S.r.l., con sede in Via Trieste 98, 87046 Montalto Uffugo (CS), Italia. Le finalità del trattamento includono: rispondere alle richieste inviate tramite i moduli del sito (contatto, preventivo, newsletter) e fornire i servizi richiesti.",
+        "Il trattamento avviene con il consenso dell'interessato e/o per l'esecuzione di un contratto. I dati raccolti tramite moduli di contatto saranno conservati per 24 mesi, mentre i dati relativi alla newsletter saranno conservati fino alla richiesta di cancellazione da parte dell'utente.",
+        "I dati personali potranno essere trattati da fornitori esterni nominati Responsabili del trattamento, tra cui Netlify (hosting del sito), Aruba (gestione del dominio) e MailerLite (piattaforma di invio email), per garantire il corretto funzionamento dei servizi richiesti.",
+        "L'utente può esercitare in ogni momento i diritti di accesso, rettifica, cancellazione, limitazione, opposizione e portabilità scrivendo all'indirizzo email: privacy@poolegarden.it."
       ]
     },
     "cookie": {
       "title": "Cookie Policy",
       "body": [
-        "Il sito utilizza cookie tecnici necessari al corretto funzionamento (sessione, preferenze di lingua, banner di consenso). Questi cookie non richiedono consenso.",
-        "Previo consenso, il sito può utilizzare cookie analitici (es. statistiche aggregate) e di terze parti per la visualizzazione della mappa e i pulsanti social.",
-        "Puoi gestire o revocare il tuo consenso in qualsiasi momento utilizzando il pulsante 'Impostazioni cookie' nel piè di pagina.",
-        "Questa è una policy placeholder: sostituirla con l'informativa cookie completa, inclusivo di elenco dettagliato dei cookie utilizzati."
+        "Il sito utilizza cookie tecnici necessari al corretto funzionamento (sessione, preferenze di lingua, banner di consenso). Questi cookie non richiedono consenso preventivo in quanto strettamente necessari.",
+        "Previo consenso, il sito può utilizzare cookie analitici per raccogliere statistiche aggregate sull'utilizzo e cookie di terze parti necessari per l'integrazione di mappe interattive e pulsanti social.",
+        "I dati raccolti tramite cookie possono essere gestiti da piattaforme terze (come MailerLite per il tracciamento delle aperture delle email) che agiscono come Responsabili del trattamento dei dati.",
+        "Puoi gestire, accettare o revocare il tuo consenso in qualsiasi momento utilizzando il pulsante 'Impostazioni cookie' disponibile nel piè di pagina del sito.",
+        "La presente informativa è redatta in conformità alla normativa vigente e verrà aggiornata qualora vengano introdotti nuovi servizi o tecnologie di tracciamento."
       ]
     },
     "terms": {
       "title": "Termini e Condizioni",
       "body": [
-        "L'utilizzo del sito implica l'accettazione dei presenti termini e condizioni. Tutti i contenuti (testi, immagini, loghi) sono di proprietà di Pool & Garden e non possono essere riprodotti senza autorizzazione.",
-        "Le informazioni presenti sul sito hanno carattere illustrativo e non costituiscono offerta vincolante. I preventivi sono regolarizzati dai relativi documenti contrattuali.",
-        "Per qualsiasi controversia è competente il Foro di Milano, con applicazione della legge italiana.",
-        "Questa è una pagina placeholder: sostituirla con i termini e condizioni legali completi."
+        "L'utilizzo del sito implica l'accettazione dei presenti termini e condizioni. Tutti i contenuti (testi, immagini, loghi) sono di proprietà di Pool & Garden S.r.l. e non possono essere riprodotti senza autorizzazione scritta.",
+        "Le informazioni presenti sul sito hanno carattere illustrativo e non costituiscono offerta vincolante. I preventivi forniti tramite i moduli avranno valore contrattuale solo dopo conferma scritta e accettazione tramite i relativi documenti ufficiali.",
+        "Pool & Garden S.r.l. non risponde di eventuali malfunzionamenti del sito dovuti a cause di forza maggiore o a interventi tecnici di fornitori terzi (come Netlify o Aruba).",
+        "Per qualsiasi controversia derivante dall'utilizzo del sito è competente in via esclusiva il Foro di Cosenza, con applicazione della legge italiana."
       ]
     }
   }

@@ -10,34 +10,33 @@
 export const site = {
   name: "Pool & Garden",
   legalName: "Pool & Garden S.r.l.",
-  vatNumber: "00000000000",
+  vatNumber: "03771660788",
   address: {
-    street: "Via del Giardino 12",
-    city: "20121 Milano (MI)",
+    street: "Via Trieste 98",
+    city: "87046 Montalto Uffugo (CS)",
     country: "Italia",
   },
   foundedYear: 2005,
   domain: "https://www.poolegarden.it",
   email: "info@poolegarden.it",
-  phone: "+39 02 1234 5678",
-  phoneHref: "+390212345678",
-  whatsapp: "393331234567",
-  hoursIT: "Lun–Ven: 8:30–18:30 · Sab: 9:00–12:30",
+  phone: "+39 393 93 18 818",
+  phoneHref: "+393939318818",
+  whatsapp: "393939318818",
+  hoursIT: "Lun–Ven: 7:00–19:30",
   social: {
     facebook: "https://www.facebook.com/poolegarden",
     instagram: "https://www.instagram.com/poolegarden",
     linkedin: "https://it.linkedin.com/in/pool-garden-20a54473",
   },
-  /** Approximate coordinates for the map embed (placeholder: Milan centre). */
   map: {
-    lat: 45.4642,
-    lng: 9.19,
+    lat: 39.386837677794375,
+    lng: 16.236521953145026,
     delta: 0.01,
   },
   /** Static form endpoints — replace with real Formspree/EmailJS id. */
   forms: {
-    contact: "https://formspree.io/f/your-contact-form-id",
-    newsletter: "https://formspree.io/f/your-newsletter-form-id",
+    contact: "https://formspree.io/f/meajrqzp",
+    newsletter: "https://assets.mailerlite.com/jsonp/2579284/forms/195990286900397992/subscribe",
   },
 } as const;
 

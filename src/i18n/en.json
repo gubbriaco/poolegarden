@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Pool & Garden | Construction & Maintenance of Pools, Irrigation and Artificial Lawns",
-    "description": "Pool & Garden builds and maintains swimming pools, irrigation systems and artificial lawns. Professional construction and maintenance for your garden across Italy.",
+    "description": "Pool & Garden builds and maintains pools, irrigation systems and artificial lawns. Professional construction and maintenance for your garden across Italy.",
     "ogTitle": "Pool & Garden — Pools, Irrigation and Artificial Lawns",
-    "ogDescription": "Construction and maintenance of swimming pools, irrigation systems and artificial lawns. Request a free quote."
+    "ogDescription": "Construction and maintenance of pools, irrigation systems and artificial lawns. Request a free quote."
   },
   "nav": {
     "home": "Home",
@@ -48,7 +48,7 @@
     "learnMore": "Learn more",
     "cards": {
       "piscine": {
-        "title": "Swimming pools",
+        "title": "Pools",
         "desc": "In-ground and above-ground pools, custom-designed, efficient and built to last."
       },
       "irrigazione": {
@@ -154,7 +154,7 @@
   "about": {
     "eyebrow": "About us",
     "title": "A passion for greenery and water since 2005",
-    "p1": "Pool & Garden is an Italian company specialised in the construction and maintenance of swimming pools, irrigation systems and artificial lawns. For over five years we have been turning ordinary outdoor spaces into welcoming, functional and beautiful places to live.",
+    "p1": "Pool & Garden is an Italian company specialised in the construction and maintenance of pools, irrigation systems and artificial lawns. For over five years we have been turning ordinary outdoor spaces into welcoming, functional and beautiful places to live.",
     "p2": "Our team combines technical expertise, craftsmanship and the use of premium certified materials. We follow every project from the first idea to a turnkey delivery, and stay by your side with long-term maintenance.",
     "missionTitle": "Our mission",
     "missionText": "To create outdoor spaces that improve people's quality of life, combining design, sustainability and reliability with transparent, tailored service.",
@@ -249,7 +249,7 @@
     "disclaimer": "By subscribing you accept our privacy policy. No spam, unsubscribe anytime."
   },
   "footer": {
-    "tagline": "Construction and maintenance of swimming pools, irrigation systems and artificial lawns. Your outdoors, cared for in every detail.",
+    "tagline": "Construction and maintenance of pools, irrigation systems and artificial lawns. Your outdoors, cared for in every detail.",
     "exploreTitle": "Explore",
     "servicesTitle": "Services",
     "contactTitle": "Contact",
@@ -278,29 +278,30 @@
     "privacy": {
       "title": "Privacy Policy",
       "body": [
-        "This policy describes how Pool & Garden collects, uses and protects the personal data of website users, in compliance with Regulation (EU) 2016/679 (GDPR).",
-        "The data controller is Pool & Garden S.r.l., based in Via del Giardino 12, 20121 Milan (MI), Italy. The purposes of processing include: responding to requests sent via the site forms (contact, quote, newsletter) and providing the requested services.",
-        "Processing is carried out with the user's consent and/or for the performance of a contract. Data is kept for the strictly necessary time and in any case no longer than the legal terms.",
-        "The user may at any time exercise the rights of access, rectification, erasure, restriction, objection and portability by writing to the email address indicated in the contacts.",
-        "This is a placeholder notice: replace it with the complete and up-to-date legal notice drawn up by the data controller."
+        "This privacy policy describes how Pool & Garden collects, uses, and protects the personal data of website users, in compliance with the General Data Protection Regulation (GDPR) (EU) 2016/679.",
+        "The Data Controller is Pool & Garden S.r.l., based in Via Trieste 98, 87046 Montalto Uffugo (CS), Italy. The purposes of data processing include: responding to requests submitted via the website forms (contact, quote, newsletter) and providing the requested services.",
+        "Processing is carried out with the user's consent and/or for the execution of a contract. Data collected via contact forms will be retained for 24 months, while newsletter-related data will be retained until the user requests cancellation.",
+        "Personal data may be processed by external providers appointed as Data Processors, including Netlify (website hosting), Aruba (domain management), and MailerLite (email sending platform), to ensure the correct functioning of the requested services.",
+        "Users may exercise their rights of access, rectification, erasure, restriction, objection, and portability at any time by writing to: privacy@poolegarden.it."
       ]
     },
     "cookie": {
       "title": "Cookie Policy",
       "body": [
-        "The site uses technical cookies necessary for correct operation (session, language preferences, consent banner). These cookies do not require consent.",
-        "With consent, the site may use analytics cookies (e.g. aggregate statistics) and third-party cookies for displaying the map and social buttons.",
-        "You can manage or revoke your consent at any time using the 'Cookie settings' button in the footer.",
-        "This is a placeholder policy: replace it with the complete cookie notice, including a detailed list of the cookies used."
+        "The website uses technical cookies necessary for its correct functioning (session, language preferences, consent banner). These cookies do not require prior consent as they are strictly necessary.",
+        "With prior consent, the website may use analytical cookies to collect aggregate usage statistics and third-party cookies necessary for the integration of interactive maps and social buttons.",
+        "Data collected through cookies may be managed by third-party platforms (such as MailerLite for tracking email opens) acting as Data Processors.",
+        "You can manage, accept, or revoke your consent at any time by using the 'Cookie Settings' button available in the website's footer.",
+        "This policy is drafted in compliance with current regulations and will be updated if new tracking technologies or services are introduced."
       ]
     },
     "terms": {
-      "title": "Terms & Conditions",
+      "title": "Terms and Conditions",
       "body": [
-        "Using the site implies acceptance of these terms and conditions. All content (texts, images, logos) is owned by Pool & Garden and may not be reproduced without authorisation.",
-        "The information on the site is illustrative and does not constitute a binding offer. Quotes are governed by the relevant contractual documents.",
-        "Any dispute shall be subject to the jurisdiction of the Court of Milan, under Italian law.",
-        "This is a placeholder page: replace it with the full legal terms and conditions."
+        "Use of the website implies acceptance of these terms and conditions. All content (texts, images, logos) is the property of Pool & Garden S.r.l. and may not be reproduced without written authorization.",
+        "The information on the website is for illustrative purposes only and does not constitute a binding offer. Quotes provided via the forms will only have contractual value after written confirmation and acceptance through official documentation.",
+        "Pool & Garden S.r.l. is not liable for any website malfunctions due to force majeure or technical interventions by third-party providers (such as Netlify or Aruba).",
+        "Any dispute arising from the use of the website shall be subject to the exclusive jurisdiction of the Court of Cosenza, under the application of Italian law."
       ]
     }
   }
