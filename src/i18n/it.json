@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Pool & Garden | Realizzazione e Manutenzione Piscine, Irrigazione e Prati Sintetici",
-    "description": "Pool & Garden progetta, realizza e cura piscine, impianti di irrigazione e prati sintetici. Costruzione e manutenzione professionale per il tuo giardino in tutta Italia.",
+    "description": "Pool & Garden realizza e cura piscine, impianti di irrigazione e prati sintetici. Costruzione e manutenzione professionale per il tuo giardino in tutta Italia.",
     "ogTitle": "Pool & Garden — Piscine, Irrigazione e Prati Sintetici",
     "ogDescription": "Costruzione e manutenzione di piscine, impianti di irrigazione e prati sintetici. Richiedi un preventivo gratuito."
   },
@@ -31,7 +31,7 @@
     "badge": "Costruiamo e curiamo spazi all'aperto dal 2021",
     "titlePre": "Piscine, irrigazione e prati sintetici",
     "titleHighlight": "su misura per te",
-    "subtitle": "Progettiamo, realizziamo e manteniamo spazi verdi e acquatici con materiali premium e oltre 5 anni di esperienza al tuo servizio.",
+    "subtitle": "Realizziamo e manteniamo spazi verdi e acquatici con materiali premium.",
     "ctaPrimary": "Richiedi un preventivo",
     "ctaSecondary": "Scopri i servizi",
     "stats": [
@@ -44,7 +44,7 @@
   "servicesOverview": {
     "eyebrow": "I nostri servizi",
     "title": "Soluzioni complete per il tuo outdoor",
-    "subtitle": "Tre aree di competenza, un unico riferimento affidabile per la progettazione, la realizzazione e la manutenzione dei tuoi spazi verdi.",
+    "subtitle": "Tre aree di competenza, un unico riferimento affidabile per la realizzazione e la manutenzione dei tuoi spazi verdi.",
     "learnMore": "Approfondisci",
     "cards": {
       "piscine": {
@@ -64,19 +64,17 @@
   "piscine": {
     "eyebrow": "Piscine",
     "title": "Piscine su misura, da sogno",
-    "intro": "Dalla prima idea al primo tuffo: ci occupiamo di tutto noi. Progettiamo piscine belle, sicure ed efficienti, curandone ogni dettaglio costruttivo e la manutenzione nel tempo.",
+    "intro": "Dalla prima idea al primo tuffo: ci occupiamo di tutto noi. Realizziamo piscine belle, sicure ed efficienti, curandone ogni dettaglio costruttivo e la manutenzione nel tempo.",
     "construction": {
       "tab": "Costruzione",
       "eyebrow": "Realizzazione",
-      "title": "Costruiamo la tua piscina",
-      "desc": "Soluzioni complete di progettazione e costruzione: dallo scavo agli impianti, dalle finiture agli accessori, con materiali certificati e team specializzato.",
+      "title": "Realizziamo la tua piscina",
+      "desc": "Soluzioni complete di costruzione: impianti, finiture e accessori, con materiali certificati e team specializzato.",
       "features": [
-        "Progettazione 3D e rilievo topografico del sito",
-        "Strutture in cemento armato o kit modulari",
-        "Rivestimenti in membrane, piastrelle e resina",
+        "Strutture e kit modulari",
+        "Rivestimenti in membrane e clorocaucciù",
         "Sistemi di filtraggio e trattamento dell'acqua",
-        "Illuminazione LED e accessoristica premium",
-        "Permessi, pratiche burocratiche e garanzie"
+        "Illuminazione LED e accessoristica premium"
       ]
     },
     "maintenance": {
@@ -86,10 +84,9 @@
       "desc": "Piani di manutenzione su misura per mantenere l'acqua cristallina e gli impianti efficienti in ogni stagione.",
       "features": [
         "Pulizia fondo, pareti e skimmer",
-        "Trattamento e bilanciamento chimico dell'acqua",
+        "Trattamento dell'acqua",
         "Apertura e chiusura stagionale",
-        "Riparazione pompe, filtri e perdite",
-        "Controllo e sostituzione dei filtri"
+        "Riparazione pompe, filtri e perdite"
       ]
     },
     "cta": "Richiedi un preventivo gratuito"
@@ -97,19 +94,17 @@
   "irrigazione": {
     "eyebrow": "Impianti di irrigazione",
     "title": "Irrigazione intelligente, zero sprechi",
-    "intro": "Progettiamo impianti di irrigazione che risparmiano acqua e tempo, mantenendo giardini e prati sani grazie all'automazione e alle tecnologie a risparmio idrico.",
+    "intro": "Realizziamo impianti di irrigazione che risparmiano acqua e tempo, mantenendo giardini e prati sani grazie all'automazione e alle tecnologie a risparmio idrico.",
     "construction": {
       "tab": "Costruzione",
       "eyebrow": "Realizzazione",
-      "title": "Progettiamo il tuo impianto",
+      "title": "Realizziamo il tuo impianto",
       "desc": "Studiamo la portata, la pressione e le reali esigenze del tuo verde per installare un sistema efficiente, invisibile e affidabile.",
       "features": [
-        "Progettazione idraulica e zona per zona",
+        "Progettazione idraulica zona per zona",
         "Centraline automatizzate e programmabili",
-        "Sensori meteo e di umidità del terreno",
-        "Irrigatori a battente, a goccia e sotterranei",
-        "Tecnologie water-saving e raccordi premium",
-        "Integrazione con domotica e app"
+        "Irrigatori statici e dinamici",
+        "Tecnologie water-saving e raccordi premium"
       ]
     },
     "maintenance": {
@@ -121,7 +116,6 @@
         "Ispezioni e test di funzionamento",
         "Riparazione perdite e sostituzione ugelli",
         "Regolazione e riprogrammazione stagionale",
-        "Svuotamento e svernamento invernale",
         "Aggiornamento centraline e sensori"
       ]
     },
@@ -137,12 +131,10 @@
       "title": "Installiamo il tuo prato perfetto",
       "desc": "Preparazione del fondo, posa e finitura curata per un risultato naturale, stabile e duraturo nel tempo.",
       "features": [
-        "Preparazione e livellamento del fondo",
-        "Manti in polietilene realistici anticradamento",
+        "Stesura telo pacciamante",
+        "Manti in polietilene realistici resistenti all'usura",
         "Infill in sabbia e granuli SBR/organico",
-        "Pose per uso residenziale, commerciale e sportivo",
-        "Giunzioni invisibili e fissaggi perimetrali",
-        "Drenaggio e pendenze calcolate su misura"
+        "Pose per uso residenziale, commerciale e sportivo"
       ]
     },
     "maintenance": {
@@ -154,8 +146,7 @@
         "Spazzolatura e rinfresco delle fibre",
         "Rimozione foglie, erbacce e sporco",
         "Rabbocco dell'infill di sabbia",
-        "Riparazione di strappi e giunzioni",
-        "Sanificazione e trattamento anti-odore"
+        "Riparazione di strappi e giunzioni"
       ]
     },
     "cta": "Richiedi un preventivo gratuito"
@@ -163,7 +154,7 @@
   "about": {
     "eyebrow": "Chi siamo",
     "title": "La passione per il verde e l'acqua dal 2005",
-    "p1": "Pool & Garden è un'azienda italiana specializzata nella realizzazione e manutenzione di piscine, impianti di irrigazione e prati sintetici. Da oltre vent'anni trasformiamo spazi esterni ordinari in ambienti accoglienti, funzionali e belli da vivere.",
+    "p1": "Pool & Garden è un'azienda italiana specializzata nella realizzazione e manutenzione di piscine, impianti di irrigazione e prati sintetici. Da oltre cinque anni trasformiamo spazi esterni ordinari in ambienti accoglienti, funzionali e belli da vivere.",
     "p2": "Il nostro team unisce esperienza tecnica, cura artigianale dei dettagli e l'uso di materiali premium certificati. Seguiamo ogni progetto dalla prima idea alla consegna chiavi in mano, e restiamo al tuo fianco con la manutenzione nel tempo.",
     "missionTitle": "La nostra missione",
     "missionText": "Creare spazi all'aperto che migliorino la qualità della vita delle persone, unendo design, sostenibilità e affidabilità, con un servizio trasparente e su misura.",
@@ -178,7 +169,7 @@
       "Oltre 5 anni di esperienza sul campo",
       "Materiali e impianti certificati e garantiti",
       "Team specializzato e referenziato",
-      "Servizio completo: progetto, installazione e manutenzione",
+      "Servizio completo: realizzazione e manutenzione",
       "Copertura del servizio su tutto il territorio",
       "Assistenza post-vendita rapida e dedicata"
     ],
@@ -199,7 +190,7 @@
   "gallery": {
     "eyebrow": "Progetti",
     "title": "I nostri lavori",
-    "subtitle": "Una selezione di progetti realizzati: piscine, giardini e prati sintetici. (Immagini placeholder — sostituibili con le foto dei cantieri reali.)",
+    "subtitle": "Una selezione di progetti realizzati: piscine, giardini e prati sintetici.",
     "captions": [
       "Piscina con parapetto in vetro e vista mare",
       "Prato sintetico per giardino residenziale con vialetto",

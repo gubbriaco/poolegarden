@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Pool & Garden | Construction & Maintenance of Pools, Irrigation and Artificial Lawns",
-    "description": "Pool & Garden designs, builds and maintains swimming pools, irrigation systems and artificial lawns. Professional construction and maintenance for your garden across Italy.",
+    "description": "Pool & Garden builds and maintains swimming pools, irrigation systems and artificial lawns. Professional construction and maintenance for your garden across Italy.",
     "ogTitle": "Pool & Garden — Pools, Irrigation and Artificial Lawns",
     "ogDescription": "Construction and maintenance of swimming pools, irrigation systems and artificial lawns. Request a free quote."
   },
@@ -31,12 +31,12 @@
     "badge": "Building and caring for outdoor spaces since 2021",
     "titlePre": "Pools, irrigation and artificial lawns",
     "titleHighlight": "tailored for you",
-    "subtitle": "We design, build and maintain green and water spaces with premium materials and over 5 years of experience at your service.",
+    "subtitle": "We build and maintain green and water spaces with premium materials.",
     "ctaPrimary": "Request a quote",
     "ctaSecondary": "Explore services",
     "stats": [
-      { "value": "20+", "label": "years of experience" },
-      { "value": "500+", "label": "projects completed" },
+      { "value": "5+", "label": "years of experience" },
+      { "value": "20+", "label": "projects completed" },
       { "value": "3", "label": "specialised services" },
       { "value": "100%", "label": "satisfied clients" }
     ]
@@ -44,7 +44,7 @@
   "servicesOverview": {
     "eyebrow": "Our services",
     "title": "Complete solutions for your outdoors",
-    "subtitle": "Three areas of expertise, one trusted partner for the design, construction and maintenance of your outdoor spaces.",
+    "subtitle": "Three areas of expertise, one trusted partner for the construction and maintenance of your outdoor spaces.",
     "learnMore": "Learn more",
     "cards": {
       "piscine": {
@@ -69,14 +69,12 @@
       "tab": "Construction",
       "eyebrow": "Build",
       "title": "We build your pool",
-      "desc": "Full design and construction services: from excavation to systems, from finishes to accessories, using certified materials and a specialised team.",
+      "desc": "Full construction services: systems, finishes and accessories, using certified materials and a specialised team.",
       "features": [
-        "3D design and topographic site survey",
-        "Reinforced concrete structures or modular kits",
-        "Liners, tile and resin finishes",
+        "Structures or modular kits",
+        "Liners and chlorinated rubber finishes",
         "Water filtration and treatment systems",
-        "LED lighting and premium accessories",
-        "Permits, paperwork and warranties"
+        "LED lighting and premium accessories"
       ]
     },
     "maintenance": {
@@ -86,10 +84,9 @@
       "desc": "Tailored maintenance plans to keep the water crystal clear and the systems efficient in every season.",
       "features": [
         "Floor, wall and skimmer cleaning",
-        "Chemical treatment and water balancing",
+        "Chemical treatment",
         "Seasonal opening and closing",
-        "Pump, filter and leak repairs",
-        "Filter inspection and replacement"
+        "Pump, filter and leak repairs"
       ]
     },
     "cta": "Request a free quote"
@@ -97,19 +94,17 @@
   "irrigazione": {
     "eyebrow": "Irrigation systems",
     "title": "Smart irrigation, zero waste",
-    "intro": "We design irrigation systems that save water and time, keeping gardens and lawns healthy through automation and water-saving technologies.",
+    "intro": "We build irrigation systems that save water and time, keeping gardens and lawns healthy through automation and water-saving technologies.",
     "construction": {
       "tab": "Construction",
       "eyebrow": "Build",
-      "title": "We design your system",
+      "title": "We build your system",
       "desc": "We study flow, pressure and the real needs of your greenery to install an efficient, invisible and reliable system.",
       "features": [
         "Hydraulic design zone by zone",
         "Automated, programmable controllers",
-        "Weather and soil moisture sensors",
-        "Rotor, drip and underground sprinklers",
-        "Water-saving technology and premium fittings",
-        "Smart home and app integration"
+        "Static and dynamic sprinklers",
+        "Water-saving technology and premium fittings"
       ]
     },
     "maintenance": {
@@ -121,7 +116,6 @@
         "Inspections and operation tests",
         "Leak repairs and nozzle replacement",
         "Seasonal adjustment and reprogramming",
-        "Winter draining and winterisation",
         "Controller and sensor upgrades"
       ]
     },
@@ -137,12 +131,10 @@
       "title": "We install your perfect lawn",
       "desc": "Base preparation, installation and careful finishing for a natural, stable and long-lasting result.",
       "features": [
-        "Base preparation and levelling",
-        "Realistic anti-crush polyethylene turf",
+        "Laying mulch sheet",
+        "Realistic wear-resistent polyethylene turf",
         "Sand infill and SBR/organic granules",
-        "Residential, commercial and sports installation",
-        "Invisible seams and perimeter fixings",
-        "Custom drainage and gradients"
+        "Residential, commercial and sports installation"
       ]
     },
     "maintenance": {
@@ -154,8 +146,7 @@
         "Brushing and fibre refreshing",
         "Removal of leaves, weeds and dirt",
         "Sand infill top-up",
-        "Repair of tears and seams",
-        "Sanitisation and anti-odour treatment"
+        "Repair of tears and seams"
       ]
     },
     "cta": "Request a free quote"
@@ -163,7 +154,7 @@
   "about": {
     "eyebrow": "About us",
     "title": "A passion for greenery and water since 2005",
-    "p1": "Pool & Garden is an Italian company specialised in the construction and maintenance of swimming pools, irrigation systems and artificial lawns. For over twenty years we have been turning ordinary outdoor spaces into welcoming, functional and beautiful places to live.",
+    "p1": "Pool & Garden is an Italian company specialised in the construction and maintenance of swimming pools, irrigation systems and artificial lawns. For over five years we have been turning ordinary outdoor spaces into welcoming, functional and beautiful places to live.",
     "p2": "Our team combines technical expertise, craftsmanship and the use of premium certified materials. We follow every project from the first idea to a turnkey delivery, and stay by your side with long-term maintenance.",
     "missionTitle": "Our mission",
     "missionText": "To create outdoor spaces that improve people's quality of life, combining design, sustainability and reliability with transparent, tailored service.",
@@ -178,7 +169,7 @@
       "Over 5 years of field experience",
       "Certified, guaranteed materials and systems",
       "Specialised, referenced team",
-      "Full service: design, installation and maintenance",
+      "Full service: construction and maintenance",
       "Service coverage across the country",
       "Fast, dedicated after-sales support"
     ],
@@ -199,7 +190,7 @@
   "gallery": {
     "eyebrow": "Projects",
     "title": "Our work",
-    "subtitle": "A selection of completed projects: pools, gardens and artificial lawns. (Placeholder images — replace with real site photos.)",
+    "subtitle": "A selection of completed projects: pools, gardens and artificial lawns.",
     "captions": [
       "Pool with glass railing and sea view",
       "Artificial grass for residential garden with pathway",
